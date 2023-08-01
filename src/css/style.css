@@ -5,32 +5,26 @@
 
 body {
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
-.container {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-}
 
 h1 {
     padding: 20px;
 }
 
-.indexul {
+.indexnav ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     list-style: none;
- }
-
-.indexul li {
+    justify-content: center;
     width: 150px;
     height: 50px;
 }
 
-.indexul a {
+.indexul li a {
+    font-family: 'emmaus';
     text-decoration: none;
 }
