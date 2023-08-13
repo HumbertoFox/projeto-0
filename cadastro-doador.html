@@ -9,46 +9,51 @@
     <title>Cadastrar Doador</title>
 </head>
 
-<body>
-    <h1>Cadastrar Doador</h1>
+<body class="body">
 
-    <form method="POST" action="">
+    <h1 class="h1">Cadastrar Doador</h1>
+
+    <form class="form formdoador" method="POST" action="">
+        
         <label for="nome">Nome do Doador</label>
-        <input type="text" name="" id="">
-        <label for="codigo">Código do Doador</label>
-        <input type="text" name="" id="">
-        <label for="contato1">Nº de Contato 1</label>
-        <input type="text" name="" id="">
-        <label for="contato2">Nº de Contato 2</label>
-        <input type="text" name="" id="">
+        <input type="text" name="nome" id="nome">
+        <label for="codigodoador">Código do Doador</label>
+        <input type="text" name="codigodoador" id="codigodoador">
+        <label for="contato1">Número do Responsável</label>
+        <input type="text" name="contato1" id="contato1">
+        <label for="contato2">Número do Responsável/Opcional</label>
+        <input type="text" name="contato2" id="contato2">
         <label for="cep">CEP</label>
-        <input type="number" name="" id="">
-        <label for="endenreco">Logradouro: Av/Travessa/Rua</label>
-        <input type="text" name="" id="">
-        <label for="">Nº da Casa/Edifício/Empresa</label>
-        <input type="text" name="" id="">
-        <input type="radio" name="tiporesidencia" id="casa" value="casa">
-        <label for="casa">Casa</label>
-        <input type="radio" name="tiporesidencia" id="edificio">
-        <label for="edificio">Edifício</label>
-        <input type="radio" name="tiporesidencia" id="empresa">
-        <label for="empresa">Empresa</label>
-        <label for="">CNPJ</label>
-        <input type="number" name="" id="">
-        <label for="">Bloco</label>
-        <input type="text" name="" id="">
-        <label for="">Apartamento/Sala</label>
-        <input type="text" name="" id="">
-        <label for="">Ponto de Referência</label>
-        <textarea name="" id="" cols="50" rows="5"></textarea>
+        <input type="number" name="cep" id="cep">
+        <label for="endereco">Logradouro: Av/Travessa/Rua</label>
+        <input type="text" name="endereco" id="endereco">
+        <label for="nunresidencia">Nº da Casa/Edifício/Empresa</label>
+        <input type="text" name="nunresidencia" id="nunresidencia">
+        <div class="tiporesidencia">
+            <input type="radio" name="tiporesidencia" id="casa" value="casa" checked>
+            <label for="casa">Casa</label>
+            <input type="radio" name="tiporesidencia" id="edificio" value="edificio">
+            <label for="edificio">Edifício</label>
+            <input type="radio" name="tiporesidencia" id="empresa" value="empresa">
+            <label for="empresa">Empresa</label>
+        </div>
+        <label for="cnpj">CNPJ</label>
+        <input type="number" name="cnpj" id="cnpj">
+        <label for="bloco">Bloco</label>
+        <input type="text" name="bloco" id="bloco">
+        <label for="salaap">Apartamento/Sala</label>
+        <input type="text" name="salaap" id="salaap">
+        <label for="pontoref">Ponto de Referência</label>
+        <textarea name="pontoref" id="pontoref" cols="50" rows="5"></textarea>
         <label for="bairro">Bairro/Distrito</label>
-        <input type="" name="" id="">
+        <input type="text" name="bairro" id="bairro">
         <label for="cidade">Cidade</label>
-        <input type="text" name="" id="">
+        <input type="text" name="cidade" id="cidade">
+        
     </form>
 
     <a class="btna" href="index.html">Seleção de Formulário</a>
-    
+
 </body>
 
 </html>

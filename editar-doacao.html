@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,139 @@
     <link rel="stylesheet" href="src/css/style.css">
     <title>Editar Doação</title>
 </head>
-<body>
-    <h1>Editar Doação Cadastrada</h1>
-    
+
+<body class="body">
+
+    <h1 class="h1">Editar Doação Cadastrada</h1>
+
+    <main class="main">
+
+        <form class="form formnumeroficha" method="POST" action="">
+
+            <label for="codigoficha">Número da Ficha</label>
+            <input type="text" name="codigoficha" id="codigoficha">
+            <input type="submit" value="Pesquisar">
+
+        </form>
+
+        <form class="form forminfordoador">
+
+            <fieldset class="fieldsetdoador" disabled="disabled">
+
+                <legend>Informações do Doador</legend>
+
+                <label for="nome">Nome do Doador</label>
+                <input type="text" name="nome" id="nome">
+                <label for="codigodoador">Código do Doador</label>
+                <input type="text" name="codigodoador" id="codigodoador">
+                <label for="contato1">Número do Responsável</label>
+                <input type="text" name="contato1" id="contato1">
+                <label for="contato2">Número do Responsável/Opcional</label>
+                <input type="text" name="contato2" id="contato2">
+                <label for="cep">CEP</label>
+                <input type="number" name="cep" id="cep">
+                <label for="endereco">Logradouro: Av/Travessa/Rua</label>
+                <input type="text" name="endereco" id="endereco">
+                <label for="nunresidencia">Nº da Casa/Edifício/Empresa</label>
+                <input type="text" name="nunresidencia" id="nunresidencia">
+                <label for="cnpj">CNPJ</label>
+                <input type="number" name="cnpj" id="cnpj">
+                <label for="bloco">Bloco</label>
+                <input type="text" name="bloco" id="bloco">
+                <label for="salaap">Apartamento/Sala</label>
+                <input type="text" name="salaap" id="salaap">
+                <label for="pontoref">Ponto de Referência</label>
+                <textarea name="pontoref" id="pontoref" cols="50" rows="5"></textarea>
+                <label for="bairro">Bairro/Distrito</label>
+                <input type="text" name="bairro" id="bairro">
+                <label for="cidade">Cidade</label>
+                <input type="text" name="cidade" id="cidade">
+
+            </fieldset>
+
+        </form>
+
+        <form class="form forminforobjetos" method="POST" action="">
+
+            <fieldset class="fieldsetgrid">
+
+                <legend>Lista de objetos a serem doados</legend>
+
+                <div class="divinforobs">
+                    <label for="codigodoacao">Código da Doação</label>
+                    <input type="text" name="codigodoacao" id="codigodoacao" readonly>
+                    <label for="obs">Observações</label>
+                    <textarea name="obs" id="obs" cols="50" rows="5"></textarea>
+                </div>
+                <div class="divobjetos0">
+                    <label for="Objeto0">Objeto 1</label>
+                    <input type="text" name="Objeto0" id="Objeto0">
+                    <label for="quant0">Qantidade/Caixa/Sacola</label>
+                    <input type="text" name="quant0" id="quant0">
+                    <label for="Objeto1">Objeto 2</label>
+                    <input type="text" name="Objeto1" id="Objeto1">
+                    <label for="quant1">Qantidade/Caixa/Sacola</label>
+                    <input type="text" name="quant1" id="quant1">
+                    <label for="Objeto2">Objeto 3</label>
+                    <input type="text" name="Objeto2" id="Objeto2">
+                    <label for="quant2">Qantidade/Caixa/Sacola</label>
+                    <input type="text" name="quant2" id="quant2">
+                    <label for="Objeto3">Objeto 4</label>
+                    <input type="text" name="Objeto3" id="Objeto3">
+                    <label for="quant3">Qantidade/Caixa/Sacola</label>
+                    <input type="text" name="quant3" id="quant3">
+                    <label for="Objeto4">Objeto 5</label>
+                    <input type="text" name="Objeto4" id="Objeto4">
+                    <label for="quant4">Qantidade/Caixa/Sacola</label>
+                    <input type="text" name="quant4" id="quant4">
+                    <label for="Objeto5">Objeto 6</label>
+                    <input type="text" name="Objeto5" id="Objeto5">
+                    <label for="quant5">Qantidade/Caixa/Sacola</label>
+                    <input type="text" name="quant5" id="quant5">
+                    <label for="Objeto6">Objeto 7</label>
+                    <input type="text" name="Objeto6" id="Objeto6">
+                    <label for="quant6">Qantidade/Caixa/Sacola</label>
+                    <input type="text" name="quant6" id="quant6">
+                </div>
+                <div class="divobjetos1">
+                    <label for="Objeto7">Objeto 8</label>
+                    <input type="text" name="Objeto7" id="Objeto7">
+                    <label for="quant7">Qantidade/Caixa/Sacola</label>
+                    <input type="text" name="quant7" id="quant7">
+                    <label for="Objeto8">Objeto 9</label>
+                    <input type="text" name="Objeto8" id="Objeto8">
+                    <label for="quant8">Qantidade/Caixa/Sacola</label>
+                    <input type="text" name="quant8" id="quant8">
+                    <label for="Objeto9">Objeto 10</label>
+                    <input type="text" name="Objeto9" id="Objeto9">
+                    <label for="quant9">Qantidade/Caixa/Sacola</label>
+                    <input type="text" name="quant9" id="quant9">
+                    <label for="Objeto10">Objeto 11</label>
+                    <input type="text" name="Objeto10" id="Objeto10">
+                    <label for="quant10">Qantidade/Caixa/Sacola</label>
+                    <input type="text" name="quant10" id="quant10">
+                    <label for="Objeto11">Objeto 12</label>
+                    <input type="text" name="Objeto11" id="Objeto11">
+                    <label for="quant11">Qantidade/Caixa/Sacola</label>
+                    <input type="text" name="quant11" id="quant11">
+                    <label for="Objeto12">Objeto 13</label>
+                    <input type="text" name="Objeto12" id="Objeto12">
+                    <label for="quant12">Qantidade/Caixa/Sacola</label>
+                    <input type="text" name="quant12" id="quant12">
+                    <label for="Objeto13">Objeto 14</label>
+                    <input type="text" name="Objeto13" id="Objeto13">
+                    <label for="quant13">Qantidade/Caixa/Sacola</label>
+                    <input type="text" name="quant13" id="quant13">
+                </div>
+
+            </fieldset>
+
+        </form>
+
+    </main>
+
     <a class="btna" href="index.html">Seleção de Formulário</a>
-    
+
 </body>
+
 </html>
