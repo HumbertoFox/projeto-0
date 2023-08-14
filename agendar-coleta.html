@@ -15,15 +15,17 @@
 
     <main class="main">
 
-        <form class="form formnumeroficha" method="POST" action="">
+        <form class="form formnumeroficha" method="POST" action="#">
 
             <label for="codigoficha">Código da Doação</label>
-            <input type="text" name="codigoficha" id="codigoficha">
-            <input type="submit" value="Pesquisar">
+            <input type="search" name="codigoficha" id="codigoficha">
+            <div class="divinput">
+                <input class="btninput" type="submit" value="Pesquisar">
+            </div>
 
         </form>
 
-        <form class="form forminfordoador">
+        <form class="form forminfordoador" method="POST" action="#">
 
             <fieldset class="fieldsetdoador" disabled="disabled">
 
@@ -134,6 +136,10 @@
                 </div>
 
             </fieldset>
+
+            <div class="divinput">
+                <input class="btninput" type="submit" value="Agendar e Imprimir">
+            </div>
 
         </form>
 

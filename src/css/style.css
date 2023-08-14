@@ -7,6 +7,10 @@ textarea {
     resize: none;
 }
 
+fieldset[disabled] input, fieldset[disabled] textarea {
+    border: none;
+}
+
 .body {
     display: flex;
     flex-direction: column;
@@ -19,6 +23,7 @@ textarea {
     padding: 20px;
     text-transform: uppercase;
     font-family: 'emmaus';
+    text-shadow: 2px 2px #AAF998;
 }
 
 .main {
@@ -27,21 +32,51 @@ textarea {
                          "infordoador inforobjetos";
 }
 
+.form input, .form textarea {
+    border-bottom: 0.5px solid #AAF998;
+    border-left: 0.5px solid #AAF998;
+}
+
 .form {
     display: flex;
     flex-direction: column;
     font-size: 15px;
 }
 
-.fieldsetdoador {
+.form .divbtn {
     display: flex;
-    flex-direction: column;
+    gap: 10px;
+}
+
+.form  .divinput {
+    display: flex;
+    margin: 5px 0;
+}
+
+.form .btninput {
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #AAF998;
+}
+
+.form .btninput:hover {
+    background-color: #79D1FF;
+    transition: 0.3s ease-in-out;
 }
 
 .fieldsetgrid {
     display: grid;
     grid-template-areas: "inforobs inforobs"
                          "objetos0 objetos1";
+}
+
+.fieldsetdoador {
+    display: flex;
+    flex-direction: column;
 }
 
 .divinforobs {
@@ -83,8 +118,9 @@ textarea {
 }
 
 .btna, .indexnav ul li a {
-    font-family: 'emmaus';
+    font-family: 'emmaus', sans-serif, Arial;
     font-size: 24px;
+    text-shadow: 2px 2px #AAF998;
 }
 
 .btna:hover, .indexnav ul li a:hover {

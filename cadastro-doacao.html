@@ -15,15 +15,17 @@
 
     <main class="main">
 
-        <form class="form formnumeroficha" method="POST" action="">
+        <form class="form formnumeroficha" method="POST" action="#">
 
             <label for="codnometel">Nome/Telefone/Código do doador</label>
-            <input type="text" name="codnometel" id="codnometel">
-            <input type="submit" value="Pesquisar">
+            <input type="search" name="codnometel" id="codnometel">
+            <div class="divinput">
+                <input class="btninput" type="submit" value="Pesquisar">
+            </div>
 
         </form>
 
-        <form class="form forminfordoador" method="POST" action="">
+        <form class="form forminfordoador" method="POST" action="#">
 
             <label for="cep">Selecionar CEP do Doador</label>
             <input type="number" name="cep" id="cep">
@@ -63,7 +65,7 @@
 
         </form>
 
-        <form class="form forminforobjetos" method="POST" action="">
+        <form class="form forminforobjetos" method="POST" action="#">
 
             <fieldset class="fieldsetgrid">
 
@@ -74,6 +76,7 @@
                     <textarea name="obs" id="obs" cols="50" rows="5"></textarea>
                 </div>
                 <div class="divobjetos0">
+
                     <label for="Objeto0">Objeto 1</label>
                     <input type="text" name="Objeto0" id="Objeto0">
                     <label for="quant0">Qantidade/Caixa/Sacola</label>
@@ -102,8 +105,10 @@
                     <input type="text" name="Objeto12" id="Objeto12">
                     <label for="quant12">Qantidade/Caixa/Sacola</label>
                     <input type="text" name="quant12" id="quant12">
+
                 </div>
                 <div class="divobjetos1">
+
                     <label for="Objeto1">Objeto 2</label>
                     <input type="text" name="Objeto1" id="Objeto1">
                     <label for="quant1">Qantidade/Caixa/Sacola</label>
@@ -132,11 +137,23 @@
                     <input type="text" name="Objeto13" id="Objeto13">
                     <label for="quant13">Qantidade/Caixa/Sacola</label>
                     <input type="text" name="quant13" id="quant13">
+
                 </div>
 
             </fieldset>
 
+            <div class="divbtn">
+                <div class="divinput">
+                    <input class="btninput" type="submit" value="Cadastrar Doação">
+                </div>
+
+                <div class="divinput">
+                    <input class="btninput" type="submit" value="Cadastrar e agendar">
+                </div>
+            </div>
+
         </form>
+
     </main>
 
     <a class="btna" href="index.html">Seleção de Formulário</a>

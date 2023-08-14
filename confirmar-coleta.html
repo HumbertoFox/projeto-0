@@ -15,20 +15,22 @@
 
     <main class="main">
 
-        <form class="form formnumeroficha" method="POST" action="">
+        <form class="form formnumeroficha" method="POST" action="#">
 
             <label for="codigoficha">Número da Ficha</label>
-            <input type="text" name="codigoficha" id="codigoficha">
-            <input type="submit" value="Pesquisar">
+            <input type="search" name="codigoficha" id="codigoficha">
+            <div class="divinput">
+                <input class="btninput" type="submit" value="Pesquisar">
+            </div>
 
         </form>
 
-        <form class="form forminfordoador">
+        <form class="form forminfordoador" method="POST" action="#">
 
             <fieldset class="fieldsetdoador" disabled="disabled">
 
                 <legend>Informações do Doador</legend>
-                
+
                 <label for="nome">Nome do Doador</label>
                 <input type="text" name="nome" id="nome">
                 <label for="codigodoador">Código do Doador</label>
@@ -60,7 +62,7 @@
 
         </form>
 
-        <form class="form forminforobjetos" method="POST" action="">
+        <form class="form forminforobjetos" method="POST" action="#">
 
             <fieldset class="fieldsetgrid" disabled="disabled">
 
@@ -135,10 +137,14 @@
 
             </fieldset>
 
+            <div class="divinput">
+                <input class="btninput" type="submit" value="Confirmar Coleta">
+            </div>
+
         </form>
 
     </main>
-    
+
     <a class="btna" href="index.html">Seleção de Formulário</a>
 
 </body>
