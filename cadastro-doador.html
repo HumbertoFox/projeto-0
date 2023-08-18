@@ -29,22 +29,20 @@
         <input type="text" name="endereco" id="endereco">
         <label for="nunresidencia">Número da Casa/Edifício/Empresa</label>
         <input type="text" name="nunresidencia" id="nunresidencia">
-        <div class="tiporesidencia">
-            <input type="radio" name="tiporesidencia" id="casa" value="casa" checked>
+        <div class="tipoderesidencia">
+            <input type="radio" name="tiporesidencia" id="casa" value="casa">
             <label for="casa">Casa</label>
             <input type="radio" name="tiporesidencia" id="edificio" value="edificio">
-            <label for="edificio">Edifício</label>
-            <input type="radio" name="tiporesidencia" id="empresa" value="empresa">
-            <label for="empresa">Empresa</label>
+            <label for="edificio">Edifício/Empresa</label>
         </div>
-        <label for="cnpj">CNPJ</label>
-        <input type="number" name="cnpj" id="cnpj">
-        <label for="nomeempresa">Nome da Empresa/Edifício</label>
-        <input type="text" name="nomeempresa" id="nomeempresa">
-        <label for="bloco">Bloco</label>
-        <input type="text" name="bloco" id="bloco">
-        <label for="salaap">Apartamento/Sala</label>
-        <input type="text" name="salaap" id="salaap">
+        <label class="mostrar " for="cnpj">CNPJ</label>
+        <input class="mostrar " type="number" name="cnpj" id="cnpj">
+        <label class="mostrar " for="nomeempresa">Nome da Empresa/Edifício</label>
+        <input class="mostrar " type="text" name="nomeempresa" id="nomeempresa">
+        <label class="mostrar " for="bloco">Bloco</label>
+        <input class="mostrar " type="text" name="bloco" id="bloco">
+        <label class="mostrar " for="salaap">Apartamento/Sala</label>
+        <input class="mostrar " type="text" name="salaap" id="salaap">
         <label for="pontoref">Ponto de Referência</label>
         <textarea name="pontoref" id="pontoref" cols="50" rows="5"></textarea>
         <label for="bairro">Bairro/Distrito</label>
@@ -59,7 +57,7 @@
     </form>
 
     <a class="btna" href="index.html">Seleção de Formulário</a>
-
+    <script src="src/js/caddoador.js"></script>
 </body>
 
 </html>

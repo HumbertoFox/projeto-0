@@ -53,6 +53,10 @@ fieldset[disabled] input, fieldset[disabled] textarea {
     margin: 5px 0;
 }
 
+.ocutar {
+    display: none;
+}
+
 .form .btninput {
     display: flex;
     cursor: pointer;
