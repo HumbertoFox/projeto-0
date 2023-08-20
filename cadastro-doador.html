@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Doador</title>
     <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/style.css">
-    <title>Cadastrar Doador</title>
+    
 </head>
 
 <body class="body">
@@ -24,9 +25,9 @@
         <label for="contato2">Número do Responsável/Opcional</label>
         <input type="text" name="contato2" id="contato2">
         <label for="cep">CEP</label>
-        <input type="number" name="cep" id="cep">
+        <input type="number" name="cep" id="cep" maxlength="9" value="" onblur="pesquisacep(this.value);">
         <label for="endereco">Logradouro: Av/Travessa/Rua</label>
-        <input type="text" name="endereco" id="endereco">
+        <input type="text" name="rua" id="rua">
         <label for="nunresidencia">Número da Casa/Edifício/Empresa</label>
         <input type="text" name="nunresidencia" id="nunresidencia">
         <div class="tipoderesidencia">
@@ -57,7 +58,9 @@
     </form>
 
     <a class="btna" href="index.html">Seleção de Formulário</a>
+
     <script src="src/js/caddoador.js"></script>
+    <script src="src/js/viacep.js"></script>
 </body>
 
 </html>
