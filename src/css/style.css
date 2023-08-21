@@ -15,7 +15,6 @@ fieldset[disabled] input, fieldset[disabled] textarea {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: sans-serif, Arial, Helvetica;
 }
 
 
@@ -23,6 +22,7 @@ fieldset[disabled] input, fieldset[disabled] textarea {
     padding: 20px;
     text-transform: uppercase;
     font-family: 'emmaus';
+    font-size: 28px;
     text-shadow: 2px 2px #AAF998;
 }
 
@@ -32,25 +32,40 @@ fieldset[disabled] input, fieldset[disabled] textarea {
                          "infordoador inforobjetos";
 }
 
-.form input, .form textarea {
-    border-bottom: 0.5px solid #AAF998;
-    border-left: 0.5px solid #AAF998;
+.label {
+    color: gray;
+}
+
+.label.cursor {
+    cursor: pointer;
 }
 
 .form {
     display: flex;
     flex-direction: column;
-    font-size: 15px;
+}
+
+.form .inputtext {
+    border-bottom: 0.5px solid #79D1FF;
+    border-left: 0.5px solid #79D1FF;
+    border-bottom-left-radius: 10px;
+    padding: 10px 0 10px 10px;
 }
 
 .form .divbtn {
     display: flex;
     gap: 10px;
+    justify-content: center;
 }
 
-.form  .divinput {
+.form .divinput {
     display: flex;
     margin: 5px 0;
+    justify-content: center;
+}
+
+.form .divleft {
+    justify-content: start;
 }
 
 .ocutar {
