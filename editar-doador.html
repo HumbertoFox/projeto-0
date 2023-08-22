@@ -19,7 +19,7 @@
 
         <form class="form formnumeroficha" method="POST" action="">
 
-            <label class="label" for="codigodoador">Nome/Código/Número do Contato</label>
+            <label class="label" for="codigodoador">Código/Telefone/Nome do Doador</label>
             <input class="inputtext" type="search" name="codigoficha" id="codigoficha">
             <div class="divinput">
                 <input class="btninput" type="submit" value="Pesquisar">
@@ -30,15 +30,15 @@
         <form class="form" method="POST" action="#">
 
             <label class="label" for="codigodoador">Código do Doador</label>
-            <input class="inputtext" type="text" name="codigodoador" id="codigodoador" readonly>
+            <input class="inputtext" type="number" name="codigodoador" id="codigodoador" readonly>
             <label class="label" for="nome">Nome do Doador</label>
             <input class="inputtext" type="text" name="nome" id="nome">
-            <label class="label" for="contato1">Número do Responsável</label>
-            <input class="inputtext" type="text" name="contato1" id="contato1">
-            <label class="label" for="contato2">Número do Responsável/Opcional</label>
-            <input class="inputtext" type="text" name="contato2" id="contato2">
-            <label class="label" for="contato3">Número do Contato/Opcional</label>
-            <input class="inputtext" type="text" name="contato3" id="contato3">
+            <label class="label" for="contato1">Número Móvel do Responsável</label>
+            <input class="inputtext" type="tel" name="contato1" id="contato1" minlength="11" maxlength="11">
+            <label class="label" for="contato2">Número Móvel do Responsável/Opcional</label>
+            <input class="inputtext" type="tel" name="contato2" id="contato2" minlength="11" maxlength="11">
+            <label class="label" for="contato3">Número Fixo do Contato/Opcional ou Ramal</label>
+            <input class="inputtext" type="tel" name="contato3" id="contato3">
             <label class="label" for="cep">Cep</label>
             <input class="inputtext" type="number" name="cep" id="cep" maxlength="9" value="" onblur="pesquisacep(this.value);">
             <label class="label" for="endereco">Logradouro: Av/Travessa/Rua</label>

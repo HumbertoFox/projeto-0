@@ -14,37 +14,37 @@
 			$this->contato3 = $contato3;
 			$this->cep = $cep;
         }
-        function getIddoador(){
+        function getCodigoDoador(){
             return $this->codigodoador;
         }
         function getNome(){
             return $this->nome;
         }
-        function getTelefone1(){
+        function getContato1(){
             return $this->contato1;
         }
-        function getTelefone2(){
+        function getContato2(){
             return $this->contato2;
         }
-		function getTelefone3(){
+		function getTContato3(){
 			return $this->contato3;
 		}
 		function getCep(){
             return $this->cep;
         }
-        function setIddoador($valor){
+        function setCodigoDoador($valor){
             $this->codigodoador = $valor;
         }
         function setNome($valor){
             $this->nome = $valor;
         }
-        function setTelefone1($valor){
+        function setContato1($valor){
             $this->contato1 = $valor;
         }
-        function setTelefone2($valor){
+        function setContato2($valor){
             $this->contato2 = $valor;
         }
-        function setTelefone3($valor){
+        function setContato3($valor){
             $this->contato3 = $valor;
         }
 		function setCep($valor){

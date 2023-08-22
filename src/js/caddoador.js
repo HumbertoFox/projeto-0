@@ -11,7 +11,6 @@ function clicarEdificio() {
         const classAtual = ocutarEMostrar[classMostrar];
         classAtual.classList.remove("ocutar")
     }
-    
 }
 
 function clicarCasa() {

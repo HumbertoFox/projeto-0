@@ -17,9 +17,9 @@
 
         <form class="form formnumeroficha" method="POST" action="#">
 
-            <label class="label" for="codigoficha">Código da Doação</label>
+            <label class="label" for="codigoficha">Código da Doação/Nome/Telefone/Código do Doador</label>
             <input class="inputtext" type="search" name="codigoficha" id="codigoficha">
-            <div class="divinput divleft">
+            <div class="divinput divbtnleft">
                 <input class="btninput" type="submit" value="Pesquisar">
             </div>
 
@@ -29,18 +29,18 @@
 
             <fieldset class="fieldsetdoador" disabled="disabled">
 
-                <legend class="label">Informações do Doador</legend>
+                <legend class="label legend">Informações do Doador</legend>
 
+                <label class="label" for="codigodoador">Código do Doador</label>
+                <input class="inputtext" type="number" name="codigodoador" id="codigodoador">
                 <label class="label" class="label" for="nome">Nome do Doador</label>
                 <input class="inputtext" type="text" name="nome" id="nome">
-                <label class="label" for="codigodoador">Código do Doador</label>
-                <input class="inputtext" type="text" name="codigodoador" id="codigodoador">
-                <label class="label" for="contato1">Número do Responsável</label>
-                <input class="inputtext" type="text" name="contato1" id="contato1">
-                <label class="label" for="contato2">Número do Responsável/Opcional</label>
-                <input class="inputtext" type="text" name="contato2" id="contato2">
-                <label class="label" for="contato3">Número do Contato/Opcional</label>
-                <input class="inputtext" type="text" name="contato3" id="contato3">
+                <label class="label" for="contato1">Número Móvel do Responsável</label>
+                <input class="inputtext" type="tel" name="contato1" id="contato1">
+                <label class="label" for="contato2">Número Móvel do Responsável/Opcional</label>
+                <input class="inputtext" type="tel" name="contato2" id="contato2">
+                <label class="label" for="contato3">Número Fixo do Contato/Opcional ou Ramal</label>
+                <input class="inputtext" type="tel" name="contato3" id="contato3">
                 <label class="label" for="cep">Cep</label>
                 <input class="inputtext" type="number" name="cep" id="cep">
                 <label class="label" for="rua">Logradouro: Av/Travessa/Rua</label>
@@ -70,7 +70,7 @@
 
             <fieldset class="fieldsetgrid" disabled="disabled">
 
-                <legend class="label">Lista de objetos a serem doados</legend>
+                <legend class="label legend">Lista de objetos a serem doados</legend>
 
                 <div class="divinforobs">
                     <label class="label" for="codigodoacao">Código da Doação</label>

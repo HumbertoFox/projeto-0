@@ -30,6 +30,44 @@ fieldset[disabled] input, fieldset[disabled] textarea {
     display: grid;
     grid-template-areas: "numeroficha numeroficha"
                          "infordoador inforobjetos";
+    column-gap: 10px;
+}
+
+.form.formnumeroficha {
+    grid-area: numeroficha;
+}
+
+.form.forminfordoador {
+    grid-area: infordoador;
+}
+
+.form.forminforobjetos {
+    grid-area: inforobjetos;
+}
+
+.fieldsetgrid {
+    display: grid;
+    grid-template-areas: "inforobs inforobs"
+                         "objetos0 objetos1";
+    column-gap: 10px;
+}
+
+.divinforobs {
+    grid-area: inforobs;
+    display: flex;
+    flex-direction: column;
+}
+
+.divobjetos0 {
+    grid-area: objetos0;
+    display: flex;
+    flex-direction: column;
+}
+
+.divobjetos1 {
+    grid-area: objetos1;
+    display: flex;
+    flex-direction: column;
 }
 
 .label {
@@ -38,6 +76,11 @@ fieldset[disabled] input, fieldset[disabled] textarea {
 
 .label.cursor {
     cursor: pointer;
+}
+
+.legend {
+    padding: 5px 0;
+    text-shadow: 1px 1px 0.5px #AAF998;
 }
 
 .form {
@@ -49,7 +92,8 @@ fieldset[disabled] input, fieldset[disabled] textarea {
     border-bottom: 0.5px solid #79D1FF;
     border-left: 0.5px solid #79D1FF;
     border-bottom-left-radius: 10px;
-    padding: 10px 0 10px 10px;
+    padding: 2px 0 10px 10px;
+    width: 250px;
 }
 
 .form .divbtn {
@@ -64,7 +108,7 @@ fieldset[disabled] input, fieldset[disabled] textarea {
     justify-content: center;
 }
 
-.form .divleft {
+.form .divbtnleft {
     justify-content: start;
 }
 
@@ -80,53 +124,18 @@ fieldset[disabled] input, fieldset[disabled] textarea {
     height: 30px;
     border-radius: 5px;
     background-color: #AAF998;
+    text-shadow: 1px 1px 0.5px #79D1FF;
 }
 
 .form .btninput:hover {
     background-color: #79D1FF;
     transition: 0.3s ease-in-out;
-}
-
-.fieldsetgrid {
-    display: grid;
-    grid-template-areas: "inforobs inforobs"
-                         "objetos0 objetos1";
+    text-shadow: 1px 1px 0.5px #AAF998;
 }
 
 .fieldsetdoador {
     display: flex;
     flex-direction: column;
-}
-
-.divinforobs {
-    grid-area: inforobs;
-    display: flex;
-    flex-direction: column;
-
-}
-
-.divobjetos0 {
-    grid-area: objetos0;
-    display: flex;
-    flex-direction: column;
-}
-
-.divobjetos1 {
-    grid-area: objetos1;
-    display: flex;
-    flex-direction: column;
-}
-
-.form.formnumeroficha {
-    grid-area: numeroficha;
-}
-
-.form.forminfordoador {
-    grid-area: infordoador;
-}
-
-.form.forminforobjetos {
-    grid-area: inforobjetos;
 }
 
 .indexnav ul {
