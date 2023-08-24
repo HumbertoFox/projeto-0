@@ -79,8 +79,12 @@ fieldset[disabled] input, fieldset[disabled] textarea {
 }
 
 .legend {
-    padding: 5px 0;
     text-shadow: 1px 1px 0.5px #AAF998;
+    padding-bottom: 5px;
+}
+
+.form.forminfordoador .fieldsetdoador .label.legend.cad-doacao {
+    padding-top: 5px;
 }
 
 .form {
