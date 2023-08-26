@@ -11,6 +11,7 @@ function clicarEdificio() {
         const classAtual = ocutarEMostrar[classMostrar];
         classAtual.classList.remove("ocutar")
     }
+    document.getElementById("cnpj").focus();
 }
 
 function clicarCasa() {
@@ -18,4 +19,5 @@ function clicarCasa() {
         const classAtual = ocutarEMostrar[classOcutar];
         classAtual.classList.add("ocutar")
     }
+    document.getElementById("pontoref").focus();
 }
