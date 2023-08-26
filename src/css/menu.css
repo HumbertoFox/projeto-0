@@ -1,0 +1,48 @@
+.indexnavmenu {
+    align-self: flex-start;
+    position: fixed;
+    width: 250px;
+    height: 100vh;
+    border-right: solid 3px #79D1FF;
+    background-color: #AAF998;
+}
+
+.body .indexnavmenu .icon-empress {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    background: none;
+}
+
+.body .indexnavmenu .icon-empress img {
+    width: 100px;
+    background: none;
+}
+
+.body .indexnavmenu .ulmenu .limenu a {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: #AAF998;
+    transition: .3s ease-in-out;
+
+}
+
+.body .indexnavmenu .ulmenu .limenu a:hover {
+    background-color: #79D1FF;
+}
+
+.body .indexnavmenu .ulmenu .limenu .icon-li {
+    width: 40px;
+    margin-right: 20px;
+    background: none;
+}
+
+.body .indexnavmenu .ulmenu .limenu .icon-li:hover {
+    background-color: #79D1FF;
+}
+
+.body .indexnavmenu .ulmenu .limenu .text-li {
+    background: none;
+    font-size: 18px;
+}
