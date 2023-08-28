@@ -4,33 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmação de Coleta</title>
     <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/style.css">
-    <title>Confirmação de Coleta</title>
 </head>
 
 <body class="body">
-
-    <h1 class="h1">Confirmação de Coleta</h1>
-
     <main class="main">
-
         <form class="form formnumeroficha" method="POST" action="#">
-
             <label class="label" for="codigoficha">Número da Ficha/Código/Telefone/Nome do Doador</label>
             <input class="inputtext" type="search" name="codigoficha" id="codigoficha" autofocus>
             <div class="divinput divbtnleft">
                 <input class="btninput" type="submit" value="Pesquisar">
             </div>
-
         </form>
-
         <form class="form forminfordoador" method="POST" action="#">
-
             <fieldset class="fieldsetdoador" disabled="disabled">
-
                 <legend class="label legend">Informações do Doador</legend>
-
                 <label class="label" for="codigodoador">Código do Doador</label>
                 <input class="inputtext" type="number" name="codigodoador" id="codigodoador">
                 <label class="label" class="label" for="nome">Nome do Doador</label>
@@ -61,18 +51,11 @@
                 <input class="inputtext" type="text" name="bairro" id="bairro">
                 <label class="label" for="cidade">Cidade</label>
                 <input class="inputtext" type="text" name="cidade" id="cidade">
-
-
             </fieldset>
-
         </form>
-
         <form class="form forminforobjetos" method="POST" action="#">
-
             <fieldset class="fieldsetgrid" disabled="disabled">
-
                 <legend class="label legend">Lista de objetos que foram doados</legend>
-
                 <div class="divinforobs">
                     <label class="label" for="codigodoacao">Código da Doação</label>
                     <input class="inputtext" type="text" name="codigodoacao" id="codigodoacao">
@@ -139,17 +122,12 @@
                     <label class="label" for="quant13">Qantidade/Caixa/Sacola</label>
                     <input class="inputtext" type="text" name="quant13" id="quant13">
                 </div>
-
             </fieldset>
-
             <div class="divinput">
                 <input class="btninput" type="submit" value="Confirmar Coleta">
             </div>
-
         </form>
-
     </main>
-
 </body>
 
 </html>

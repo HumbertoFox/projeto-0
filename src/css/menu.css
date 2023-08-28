@@ -1,5 +1,9 @@
-.indexnavmenu {
+.body .header {
+    display: flex;
     align-self: flex-start;
+}
+
+.body .header .indexnavmenu {
     position: fixed;
     width: 250px;
     height: 100vh;
@@ -7,44 +11,58 @@
     background-color: #AAF998;
 }
 
-.body .indexnavmenu .icon-empress {
+.body .header .indexnavmenu .icon-empress {
     display: flex;
     justify-content: center;
     padding: 20px 0;
     background: none;
 }
 
-.body .indexnavmenu .icon-empress img {
+.body .header .indexnavmenu .icon-empress img {
     width: 100px;
     background: none;
 }
 
-.body .indexnavmenu .ulmenu .limenu {
+.body .header .indexnavmenu .ulmenu .limenu {
     background-color: #AAF998;
 }
 
-.body .indexnavmenu .ulmenu .limenu.activa {
+.body .header .indexnavmenu .ulmenu .limenu.activa {
     background-color: #79D1FF;;
 }
 
-.body .indexnavmenu .ulmenu .limenu:hover {
+.body .header .indexnavmenu .ulmenu .limenu:hover {
     background-color: #79D1FF;
 }
 
-.body .indexnavmenu .ulmenu .limenu a {
+.body .header .indexnavmenu .ulmenu .limenu a {
     display: flex;
     align-items: center;
     background: none;
     padding: 15px;
 }
 
-.body .indexnavmenu .ulmenu .limenu .icon-li {
+.body .header .indexnavmenu .ulmenu .limenu .icon-li {
     width: 40px;
     margin-right: 20px;
     background: none;
 }
 
-.body .indexnavmenu .ulmenu .limenu .text-li {
+.body .header .indexnavmenu .ulmenu .limenu .text-li {
     background: none;
     font-size: 18px;
+}
+
+.body .sectionmenu {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    margin-left: 260px;
+}
+
+.body .sectionmenu iframe {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    padding-top: 15px;
 }
