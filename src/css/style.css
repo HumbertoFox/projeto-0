@@ -11,45 +11,49 @@ fieldset[disabled] input, fieldset[disabled] textarea {
     display: flex;
 }
 
-.main {
+.body .container {
+    display: flex;
+}
+
+.body .main {
     display: grid;
     grid-template-areas: "numeroficha numeroficha"
                          "infordoador inforobjetos";
     column-gap: 10px;
 }
 
-.form.formnumeroficha {
+.body .main .form.formnumeroficha {
     grid-area: numeroficha;
 }
 
-.form.forminfordoador {
+.body .main .form.forminfordoador {
     grid-area: infordoador;
 }
 
-.form.forminforobjetos {
+.body .main .form.forminforobjetos {
     grid-area: inforobjetos;
 }
 
-.fieldsetgrid {
+.body .main .form.forminforobjetos .fieldsetgrid {
     display: grid;
     grid-template-areas: "inforobs inforobs"
                          "objetos0 objetos1";
     column-gap: 10px;
 }
 
-.divinforobs {
+.body .main .form.forminforobjetos .fieldsetgrid .divinforobs {
     grid-area: inforobs;
     display: flex;
     flex-direction: column;
 }
 
-.divobjetos0 {
+.body .main .form.forminforobjetos .fieldsetgrid .divobjetos0 {
     grid-area: objetos0;
     display: flex;
     flex-direction: column;
 }
 
-.divobjetos1 {
+.body .main .form.forminforobjetos .fieldsetgrid .divobjetos1 {
     grid-area: objetos1;
     display: flex;
     flex-direction: column;
@@ -72,7 +76,7 @@ fieldset[disabled] input, fieldset[disabled] textarea {
     padding-top: 5px;
 }
 
-.form {
+.body .main .form, .body .container .form {
     display: flex;
     flex-direction: column;
 }
@@ -122,7 +126,7 @@ fieldset[disabled] input, fieldset[disabled] textarea {
     text-shadow: 1px 1px 0.5px #AAF998;
 }
 
-.fieldsetdoador {
+.form .fieldsetdoador {
     display: flex;
     flex-direction: column;
 }
