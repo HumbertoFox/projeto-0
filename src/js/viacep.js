@@ -4,7 +4,7 @@ function limpa_formulário_cep() {
     document.getElementById('bairro').value = ("");
     document.getElementById('cidade').value = ("");
 
-}
+};
 
 function meu_callback(conteudo) {
     if (!("erro" in conteudo)) {
@@ -18,8 +18,8 @@ function meu_callback(conteudo) {
 
         limpa_formulário_cep();
         alert("CEP não encontrado.");
-    }
-}
+    };
+};
 
 function pesquisacep(valor) {
 
@@ -46,10 +46,10 @@ function pesquisacep(valor) {
 
             limpa_formulário_cep();
             alert("Formato de CEP inválido.");
-        }
+        };
     }
     else {
 
         limpa_formulário_cep();
-    }
+    };
 };
