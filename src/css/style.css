@@ -3,7 +3,8 @@
     src: url(../css/fonts/emmaus/Platelet_0.ttf);
 }
 
-fieldset[disabled] input, fieldset[disabled] textarea {
+fieldset[disabled] input,
+fieldset[disabled] textarea {
     border: none;
 }
 
@@ -77,7 +78,8 @@ fieldset[disabled] input, fieldset[disabled] textarea {
     padding-top: 5px;
 }
 
-.body .main .form, .body .container .form {
+.body .main .form,
+.body .container .form {
     display: flex;
     flex-direction: column;
 }
