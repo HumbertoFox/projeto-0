@@ -4,12 +4,12 @@
     height: 100vh;
 }
 
-.body .header {
+.header {
     display: flex;
     align-self: flex-start;
 }
 
-.body .header .indexnavmenu {
+.indexnavmenu {
     position: fixed;
     width: 250px;
     height: 100vh;
@@ -17,56 +17,56 @@
     background-color: #AAF998;
 }
 
-.body .header .indexnavmenu .icon-empress {
+.icon-empress {
     display: flex;
     justify-content: center;
     padding: 20px 0;
     background: none;
 }
 
-.body .header .indexnavmenu .icon-empress img {
+.icon-empress img {
     width: 100px;
     background: none;
 }
 
-.body .header .indexnavmenu .ulmenu .limenu {
+.limenu {
     background-color: #AAF998;
 }
 
-.body .header .indexnavmenu .ulmenu .limenu.activa {
+.limenu.activa {
     background-color: #79D1FF;;
 }
 
-.body .header .indexnavmenu .ulmenu .limenu:hover {
+.limenu:hover {
     background-color: #79D1FF;
 }
 
-.body .header .indexnavmenu .ulmenu .limenu a {
+.limenu a {
     display: flex;
     align-items: center;
     background: none;
     padding: 15px;
 }
 
-.body .header .indexnavmenu .ulmenu .limenu .icon-li {
+.limenu .icon-li {
     width: 40px;
     margin-right: 20px;
     background: none;
 }
 
-.body .header .indexnavmenu .ulmenu .limenu .text-li {
+.limenu .text-li {
     background: none;
     font-size: 18px;
 }
 
-.body .sectionmenu {
+.sectionmenu {
     display: flex;
     width: 100%;
     height: 100vh;
     margin-left: 260px;
 }
 
-.body .sectionmenu iframe {
+.sectionmenu iframe {
     display: flex;
     width: 100%;
     height: 100vh;

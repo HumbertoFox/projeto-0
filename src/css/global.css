@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'emmaus';
+    src: url(../css/fonts/emmaus/Platelet_0.ttf);
+}
+
+fieldset[disabled] input,
+fieldset[disabled] textarea {
+    border: none;
+}
+
+.body {
+    display: flex;
+    min-height: 100vh;
+}
+
+.body .main {
+    display: flex;
+}
+
+.label {
+    color: gray;
+}
+
+.label.cursor {
+    cursor: pointer;
+}
+
+.legend {
+    text-align: center;
+    text-shadow: 1px 1px 0.5px #AAF998;
+    padding-bottom: 5px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form .inputtext {
+    width: 270px;
+    padding: 2px 0 10px 10px;
+    border-bottom: 0.5px solid #79D1FF;
+    border-left: 0.5px solid #79D1FF;
+    border-bottom-left-radius: 10px;
+}
+
+.form .divbtn {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.form .divinput {
+    display: flex;
+    margin: 5px 0;
+    justify-content: center;
+}
+
+.ocutar {
+    display: none;
+}
+
+.form .btninput {
+    width: 150px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    background-color: #AAF998;
+    border-radius: 5px;
+    text-shadow: 1px 1px 0.5px #79D1FF;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.form .btninput:hover {
+    background-color: #79D1FF;
+    transition: 0.3s ease-in-out;
+    text-shadow: 1px 1px 0.5px #AAF998;
+}
+
+.fieldsetdoador {
+    display: flex;
+    flex-direction: column;
+}
