@@ -3,9 +3,10 @@
     src: url(../css/fonts/emmaus/Platelet_0.ttf);
 }
 
-fieldset[disabled] input,
-fieldset[disabled] textarea {
-    border: none;
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 .body {
@@ -94,7 +95,7 @@ fieldset[disabled] textarea {
     text-shadow: 1px 1px 0.5px #AAF998;
 }
 
-.fieldsetdoador {
+.fieldset-doador {
     display: flex;
     flex-direction: column;
 }
