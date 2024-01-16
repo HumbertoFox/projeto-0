@@ -13,7 +13,7 @@ fieldset[disabled] textarea {
     min-height: 100vh;
 }
 
-.body .main {
+.main {
     display: flex;
 }
 
@@ -34,6 +34,22 @@ fieldset[disabled] textarea {
 .form {
     display: flex;
     flex-direction: column;
+}
+
+.div-form-left {
+    margin-right: 10px;
+}
+
+.div-infor-obs,
+.div-objetos0,
+.div-objetos1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.div-objetos {
+    display: flex;
+    gap: 10px;
 }
 
 .form .inputtext {

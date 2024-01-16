@@ -5,64 +5,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editar Doação</title>
-    <link rel="stylesheet" href="src/css/reset.css">
-    <link rel="stylesheet" href="src/css/global.css">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/global.css">
 </head>
 
 <body class="body">
     <main class="main">
-        <form class="form formnumeroficha" method="POST" action="#">
-            <label class="label" for="codigoficha">Código da Doação/Nome/Telefone/Código do Doador</label>
-            <input class="inputtext" type="search" name="codigoficha" id="codigoficha" autofocus>
-            <div class="divinput divbtnleft">
-                <input class="btninput" type="submit" value="Pesquisar">
-            </div>
-        </form>
-        <form class="form forminfordoador" method="POST" action="#">
-            <fieldset class="fieldsetdoador" disabled="disabled">
-                <legend class="label legend">Informações do Doador</legend>
-                <label class="label" class="label" for="nome">Nome do Doador</label>
-                <input class="inputtext" type="text" name="nome" id="nome">
-                <label class="label" for="codigodoador">Código do Doador</label>
-                <input class="inputtext" type="number" name="codigodoador" id="codigodoador">
-                <label class="label" for="contato1">Número Móvel do Responsável</label>
-                <input class="inputtext" type="tel" name="contato1" id="contato1">
-                <label class="label" for="contato2">Número Móvel do Responsável/Opcional</label>
-                <input class="inputtext" type="tel" name="contato2" id="contato2">
-                <label class="label" for="contato3">Número Fixo do Contato/Opcional ou Ramal</label>
-                <input class="inputtext" type="tel" name="contato3" id="contato3">
-                <label class="label" for="cep">Cep</label>
-                <input class="inputtext" type="number" name="cep" id="cep">
-                <label class="label" for="rua">Logradouro: Av/Travessa/Rua</label>
-                <input class="inputtext" type="text" name="rua" id="rua">
-                <label class="label" for="numero">Nº da Casa/Edifício/Empresa</label>
-                <input class="inputtext" type="text" name="numero" id="numero">
-                <label class="label" for="cnpj">Cnpj</label>
-                <input class="inputtext" type="number" name="cnpj" id="cnpj">
-                <label class="label" for="edificio">Nome da Empresa/Edifício</label>
-                <input class="inputtext" type="text" name="edificio" id="edificio">
-                <label class="label" for="bloco">Bloco</label>
-                <input class="inputtext" type="text" name="bloco" id="bloco">
-                <label class="label" for="salaap">Apartamento/Sala</label>
-                <input class="inputtext" type="text" name="salaap" id="salaap">
-                <label class="label" for="pontoref">Ponto de Referência</label>
-                <textarea class="inputtext" name="pontoref" id="pontoref" cols="50" rows="5"></textarea>
-                <label class="label" for="bairro">Bairro/Distrito</label>
-                <input class="inputtext" type="text" name="bairro" id="bairro">
-                <label class="label" for="cidade">Cidade</label>
-                <input class="inputtext" type="text" name="cidade" id="cidade">
-            </fieldset>
-        </form>
-        <form class="form forminforobjetos" method="POST" action="">
-            <fieldset class="fieldsetgrid">
-                <legend class="label legend">Lista de objetos a serem doados</legend>
-                <div class="divinforobs">
-                    <label class="label" for="codigodoacao">Código da Doação</label>
-                    <input class="inputtext" type="number" name="codigodoacao" id="codigodoacao" readonly>
-                    <label class="label" for="obs">Observações</label>
-                    <textarea class="inputtext" name="obs" id="obs" cols="50" rows="5"></textarea>
+        <div class="div-form-left">
+            <form class="form form-numero-ficha" method="POST" action="#">
+                <label class="label" for="codigoficha">Código da Doação/Nome/Telefone/Cód Doador</label>
+                <input class="inputtext" type="search" name="codigoficha" id="codigoficha" autofocus>
+                <div class="divinput divbtnleft">
+                    <input class="btninput" type="submit" value="Pesquisar">
                 </div>
-                <div class="divobjetos0">
+            </form>
+            <form class="form form-infor-doador" method="POST" action="#">
+                <fieldset class="fieldsetdoador" disabled="disabled">
+                    <legend class="label legend">Informações do Doador</legend>
+                    <label class="label" class="label" for="nome">Nome do Doador</label>
+                    <input class="inputtext" type="text" name="nome" id="nome">
+                    <label class="label" for="codigodoador">Código do Doador</label>
+                    <input class="inputtext" type="number" name="codigodoador" id="codigodoador">
+                    <label class="label" for="contato1">Número Móvel do Responsável</label>
+                    <input class="inputtext" type="tel" name="contato1" id="contato1">
+                    <label class="label" for="contato2">Número Móvel do Responsável/Opcional</label>
+                    <input class="inputtext" type="tel" name="contato2" id="contato2">
+                    <label class="label" for="contato3">Número Fixo do Contato/Opcional ou Ramal</label>
+                    <input class="inputtext" type="tel" name="contato3" id="contato3">
+                    <label class="label" for="cep">Cep</label>
+                    <input class="inputtext" type="number" name="cep" id="cep">
+                    <label class="label" for="rua">Logradouro: Av/Travessa/Rua</label>
+                    <input class="inputtext" type="text" name="rua" id="rua">
+                    <label class="label" for="numero">Nº da Casa/Edifício/Empresa</label>
+                    <input class="inputtext" type="text" name="numero" id="numero">
+                    <label class="label" for="cnpj">Cnpj</label>
+                    <input class="inputtext" type="number" name="cnpj" id="cnpj">
+                    <label class="label" for="edificio">Nome da Empresa/Edifício</label>
+                    <input class="inputtext" type="text" name="edificio" id="edificio">
+                    <label class="label" for="bloco">Bloco</label>
+                    <input class="inputtext" type="text" name="bloco" id="bloco">
+                    <label class="label" for="salaap">Apartamento/Sala</label>
+                    <input class="inputtext" type="text" name="salaap" id="salaap">
+                    <label class="label" for="pontoref">Ponto de Referência</label>
+                    <textarea class="inputtext" name="pontoref" id="pontoref" cols="50" rows="5"></textarea>
+                    <label class="label" for="bairro">Bairro/Distrito</label>
+                    <input class="inputtext" type="text" name="bairro" id="bairro">
+                    <label class="label" for="cidade">Cidade</label>
+                    <input class="inputtext" type="text" name="cidade" id="cidade">
+                </fieldset>
+            </form>
+        </div>
+        <form class="form form-infor-objetos" method="POST" action="">
+            <div class="div-infor-obs">
+                <label class="label" for="codigodoacao">Código da Doação</label>
+                <input class="inputtext" type="number" name="codigodoacao" id="codigodoacao" readonly>
+                <label class="label" for="obs">Observações</label>
+                <textarea class="inputtext" name="obs" id="obs" cols="50" rows="5"></textarea>
+            </div>
+            <legend class="label legend">Lista de objetos a serem doados</legend>
+            <div class="div-objetos">
+                <div class="div-objetos0">
                     <label class="label" for="objeto1">objeto 1</label>
                     <input class="inputtext" type="text" name="objeto1" id="objeto1">
                     <label class="label" for="quant1">Qantidade/Caixa/Sacola</label>
@@ -92,7 +94,7 @@
                     <label class="label" for="quant7">Qantidade/Caixa/Sacola</label>
                     <input class="inputtext" type="text" name="quant7" id="quant7">
                 </div>
-                <div class="divobjetos1">
+                <div class="div-objetos1">
                     <label class="label" for="objeto8">objeto 8</label>
                     <input class="inputtext" type="text" name="objeto8" id="objeto8">
                     <label class="label" for="quant8">Qantidade/Caixa/Sacola</label>
@@ -122,7 +124,7 @@
                     <label class="label" for="quant14">Qantidade/Caixa/Sacola</label>
                     <input class="inputtext" type="text" name="quant14" id="quant14">
                 </div>
-            </fieldset>
+            </div>
             <div class="divinput">
                 <input class="btninput" type="submit" value="Editar Doação">
             </div>
