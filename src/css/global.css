@@ -55,7 +55,7 @@ input::-webkit-inner-spin-button {
 
 .form .inputtext {
     width: 270px;
-    padding: 2px 0 10px 10px;
+    padding: 6px 0 6px 10px;
     border-bottom: 0.5px solid #79D1FF;
     border-left: 0.5px solid #79D1FF;
     border-bottom-left-radius: 10px;

@@ -14,7 +14,7 @@
     <main class="main">
         <form class="form form-numero-ficha" method="POST" action="#">
             <label class="label" for="codigodoador">Código/Telefone/Nome do Doador</label>
-            <input class="inputtext" type="search" name="codigoficha" id="codigoficha" autofocus>
+            <input class="inputtext" type="search" name="codigodoador" id="codigodoador" autofocus>
             <div class="divinput">
                 <input class="btninput" type="submit" value="Pesquisar">
             </div>
@@ -31,11 +31,12 @@
             <label class="label" for="contato3">Número Fixo do Contato/Opcional ou Ramal</label>
             <input class="inputtext" type="tel" name="contato3" id="contato3">
             <label class="label" for="cep">Cep</label>
-            <input class="inputtext" type="number" name="cep" id="cep" maxlength="9" value="" onblur="pesquisacep(this.value);">
-            <label class="label" for="endereco">Logradouro: Av/Travessa/Rua</label>
+            <input class="inputtext" type="number" name="cep" id="cep" maxlength="9" value=""
+                onblur="pesquisacep(this.value);">
+            <label class="label" for="rua">Logradouro: Av/Travessa/Rua</label>
             <input class="inputtext" type="text" name="rua" id="rua">
             <label class="label" for="nunresidencia">Número da Casa/Edifício/Empresa</label>
-            <input class="inputtext" type="text" name="nunresidencia">
+            <input class="inputtext" type="text" name="nunresidencia" id="nunresidencia">
             <div class="tipo-deresidencia">
                 <input type="radio" name="tiporesidencia" id="casa" value="casa">
                 <label class="label cursor" for="casa">Casa</label>
