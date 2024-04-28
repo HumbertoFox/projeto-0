@@ -28,19 +28,21 @@
             <label class="label" for="nunresidencia">Número da Casa/Edifício/Empresa</label>
             <input class="inputtext" type="text" name="nunresidencia" id="nunresidencia">
             <div class="tipoderesidencia">
-                <input type="radio" name="tiporesidencia" id="casa" value="casa">
+                <input type="radio" name="tiporesidencia" id="casa" value="casa" checked>
                 <label class="label cursor" for="casa">Casa</label>
                 <input type="radio" name="tiporesidencia" id="edificio" value="edificio">
-                <label class="label cursor" for="edificio">Edifício/Empresa</label>
+                <label class="label cursor" for="edificio">Edifício</label>
+                <input type="radio" name="tiporesidencia" id="empresa" value="empresa">
+                <label class="label cursor" for="empresa">Empresa</label>
             </div>
-            <label class="mostrar label" for="cnpj">Cnpj</label>
-            <input class="mostrar inputtext" type="number" name="cnpj" id="cnpj">
-            <label class="mostrar label" for="edificio">Nome da Empresa/Edifício</label>
-            <input class="mostrar inputtext" type="text" name="edificio" id="edificio">
-            <label class="mostrar label" for="bloco">Bloco</label>
-            <input class="mostrar inputtext label" type="text" name="bloco" id="bloco">
-            <label class="mostrar label" for="salaap">Apartamento/Sala</label>
-            <input class="mostrar inputtext" type="text" name="salaap" id="salaap">
+            <label class="ocutar cnpj label" for="cnpj">Cnpj</label>
+            <input class="ocutar cnpj inputtext" type="number" name="cnpj" id="cnpj">
+            <label class="ocutar edificio label" for="predio">Nome do Edifício/Empresa</label>
+            <input class="ocutar edificio inputtext" type="text" name="predio" id="predio">
+            <label class="ocutar bloco label" for="bloco">Bloco</label>
+            <input class="ocutar bloco inputtext label" type="text" name="bloco" id="bloco">
+            <label class="ocutar apartamento label" for="salaap">Apartamento/Sala</label>
+            <input class="ocutar apartamento inputtext" type="text" name="salaap" id="salaap">
             <label class="label" for="pontoref">Ponto de Referência</label>
             <textarea class="inputtext" name="pontoref" id="pontoref" cols="50" rows="5"></textarea>
             <label class="label" for="bairro">Bairro/Distrito</label>
