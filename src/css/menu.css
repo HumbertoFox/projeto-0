@@ -15,18 +15,16 @@
     height: 100vh;
     border-right: solid 3px #79D1FF;
     background-color: #AAF998;
+    transition: .3s ease-in-out;
 }
 
 .icon-empress {
     display: flex;
-    justify-content: center;
-    padding: 20px 0;
-    background: none;
-}
-
-.icon-empress img {
     width: 100px;
     background: none;
+    padding: 20px 0;
+    margin: 0 auto;
+    transition: .3s ease-in-out;
 }
 
 .limenu {
@@ -55,8 +53,9 @@
 }
 
 .limenu .text-li {
-    background: none;
     font-size: 18px;
+    background: none;
+    transition: .3s ease-in-out;
 }
 
 .sectionmenu {
@@ -64,6 +63,7 @@
     width: 100%;
     height: 100vh;
     margin-left: 260px;
+    transition: .3s ease-in-out;
 }
 
 .sectionmenu iframe {
@@ -71,4 +71,22 @@
     width: 100%;
     height: 100vh;
     padding-top: 15px;
+}
+
+@media (max-width: 1080px) {
+    .indexnavmenu {
+        width: 75px;
+    }
+    
+    .limenu .text-li {
+        display: none;
+    }
+
+    .icon-empress {
+        width: 50px;
+    }
+
+    .sectionmenu {
+        margin-left: 85px;   
+    }
 }

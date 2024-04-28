@@ -2,29 +2,26 @@ body {
     min-height: 100vh;
 }
 
-body .container {
+.container {
     display: flex;
     width: 100%;
     height: 100vh;
     flex-wrap: wrap;
 }
 
-body .container .relatory-0 {
+.relatory-0 {
     display: flex;
     width: 100%;
     height: 50vh;
 }
 
-body .container .container-relatory-1-2 {
+.container-relatory-1-2 {
     display: flex;
     width: 100%;
     height: 50vh;
 }
 
-body .container .relatory-1 {
-    display: flex;
-}
-
-body .container .relatory-2 {
+.relatory-1,
+.relatory-2 {
     display: flex;
 }
