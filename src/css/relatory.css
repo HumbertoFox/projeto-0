@@ -1,27 +1,40 @@
+@font-face {
+    font-family: 'emmaus';
+    src: url(../css/fonts/emmaus/Platelet_0.ttf);
+}
+
 body {
     min-height: 100vh;
 }
 
 .container {
-    display: flex;
     width: 100%;
     height: 100vh;
+    display: flex;
     flex-wrap: wrap;
 }
 
 .relatory-0 {
-    display: flex;
     width: 100%;
     height: 50vh;
+    display: flex;
+    justify-content: center;
 }
 
 .container-relatory-1-2 {
-    display: flex;
     width: 100%;
     height: 50vh;
+    display: flex;
+    justify-content: center;
 }
 
 .relatory-1,
 .relatory-2 {
+    width: 100%;
     display: flex;
+    justify-content: center;
 }
+
+/* .data_hoje {
+
+} */
