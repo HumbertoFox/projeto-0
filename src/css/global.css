@@ -22,7 +22,8 @@ input::-webkit-inner-spin-button {
     color: gray;
 }
 
-.label.cursor {
+.label.cursor,
+input[type="radio"] {
     cursor: pointer;
 }
 
@@ -50,6 +51,7 @@ input::-webkit-inner-spin-button {
 
 .div-objetos {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
 }
 
@@ -98,4 +100,10 @@ input::-webkit-inner-spin-button {
 .fieldset-doador {
     display: flex;
     flex-direction: column;
+}
+
+@media (max-width: 610px) {
+    .main {
+        flex-wrap: wrap;
+    }
 }
