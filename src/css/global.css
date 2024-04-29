@@ -106,4 +106,8 @@ input[type="radio"] {
     .main {
         flex-wrap: wrap;
     }
+
+    .divbtn .divinput .btninput {
+        width: 130px;
+    }
 }

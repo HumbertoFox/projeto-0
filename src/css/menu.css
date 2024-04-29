@@ -89,4 +89,8 @@
     .sectionmenu {
         margin-left: 85px;   
     }
+
+    .sectionmenu iframe {
+        padding-right: 10px;
+    }   
 }
