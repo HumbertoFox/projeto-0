@@ -92,5 +92,9 @@
 
     .sectionmenu iframe {
         padding-right: 10px;
-    }   
+    }
+
+    .body {
+        min-width: 375px;
+    }
 }
