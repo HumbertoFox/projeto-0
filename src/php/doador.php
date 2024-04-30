@@ -3,7 +3,8 @@
         public $codigodoador;
         public $nome;
         public $contato1;
-        public $contato;
+        public $contato2;
+        public $contato3;
 		public $cep;
         
         function __construct($codigodoador, $nome, $contato1, $contato2, $contato3, $cep) {
