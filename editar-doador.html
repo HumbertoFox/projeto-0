@@ -12,14 +12,14 @@
 
 <body class="body">
     <main class="main">
-        <form class="form form-numero-ficha" method="POST" action="#">
+        <form class="form form-numero-ficha" method="POST" action="./src/php/pesq_doador.php">
             <label class="label" for="codigodoador">Código/Telefone/Nome do Doador</label>
-            <input class="inputtext" type="search" name="codigodoador" id="codigodoador" autofocus>
+            <input class="inputtext" type="search" name="codigodoador" id="codigodoador">
             <div class="divinput">
                 <input class="btninput" type="submit" value="Pesquisar">
             </div>
         </form>
-        <form class="form form-doador" method="POST" action="#">
+        <form class="form form-doador" method="POST" action="./src/php/edit_doador.php">
             <label class="label" for="codigodoador">Código do Doador</label>
             <input class="inputtext" type="number" name="codigodoador" id="codigodoador" readonly>
             <label class="label" for="nome">Nome do Doador</label>

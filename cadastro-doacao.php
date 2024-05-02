@@ -12,14 +12,14 @@
 <body class="body">
     <main class="main">
         <div class="div-form-left">
-            <form class="form form-numero-ficha" method="POST" action="#">
+            <form class="form form-numero-ficha" method="POST" action="./src/php/pesq_doador.php">
                 <label class="label" for="codnometel">Nome/Telefone/Código do doador</label>
-                <input class="inputtext" type="search" name="codnometel" id="codnometel" autofocus>
+                <input class="inputtext" type="search" name="codnometel" id="codnometel">
                 <div class="divinput divbtnleft">
                     <input class="btninput" type="submit" value="Pesquisar">
                 </div>
             </form>
-            <form class="form form-infor-doador" method="POST" action="#">
+            <form class="form form-infor-doador">
                 <label class="label" for="cep">Selecionar Cep do Doador</label>
                 <input class="inputtext" type="number" name="cep" id="cep">
                 <fieldset class="fieldset-doador" disabled="disabled">
@@ -57,7 +57,7 @@
                 </fieldset>
             </form>
         </div>
-        <form class="form form-infor-objetos" method="POST" action="#">
+        <form class="form form-infor-objetos" method="POST" action="./src/php/cad_doacao.php">
             <legend class="label legend">Lista de objetos a serem doados</legend>
             <div class="div-objetos">
                 <div class="div-objetos0">
@@ -127,10 +127,10 @@
             </div>
             <div class="divbtn">
                 <div class="divinput">
-                    <input class="btninput" type="submit" value="Cadastrar Doação">
+                    <input class="btninput" type="submit" name="cadastrar_doacao" value="Cadastrar Doação">
                 </div>
                 <div class="divinput">
-                    <input class="btninput" type="submit" value="Cadastrar e agendar">
+                    <input class="btninput" type="submit" name="cadastrar_agendar" value="Cadastrar e agendar">
                 </div>
             </div>
         </form>

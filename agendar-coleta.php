@@ -12,14 +12,14 @@
 <body class="body">
     <main class="main">
         <div class="div-form-left">
-            <form class="form form-numero-ficha" method="POST" action="#">
+            <form class="form form-numero-ficha" method="POST" action="./src/php/pesq_doador.php">
                 <label class="label" for="codigoficha">Código da Doação/Nome/Telefone/Cód Doador</label>
-                <input class="inputtext" type="search" name="codigoficha" id="codigoficha" autofocus>
+                <input class="inputtext" type="search" name="codigoficha" id="codigoficha">
                 <div class="divinput divbtnleft">
                     <input class="btninput" type="submit" value="Pesquisar">
                 </div>
             </form>
-            <form class="form form-infor-doador" method="POST" action="#">
+            <form class="form form-infor-doador">
                 <fieldset class="fieldset-doador" disabled="disabled">
                     <legend class="label legend">Informações do Doador</legend>
                     <label class="label" for="codigodoador">Código do Doador</label>
@@ -55,7 +55,7 @@
                 </fieldset>
             </form>
         </div>
-        <form class="form form-infor-objetos" method="POST" action="#">
+        <form class="form form-infor-objetos">
             <fieldset class="fieldset" disabled="disabled">
                 <div class="div-infor-obs">
                     <label class="label" for="codigodoacao">Código da Doação</label>

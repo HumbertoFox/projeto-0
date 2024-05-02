@@ -1,33 +1,15 @@
 <?php
-    class conexao {
-        private $host;
-        private $usuario;
-        private $senha;
-        private $banco;
-        private $conexao;
-        
-        public function __construct($host, $usuario, $senha, $banco) {
 
-            $this->host = $host;
-            $this->usuario = $usuario;
-            $this->senha = $senha;
-            $this->banco = $banco;
-        }
-        public function conectar() {
-            $this->conexao = mysqli_connect(
-                    $this->host,
-                    $this->usuario,
-                    $this->senha,
-                    $this->banco);
-            if (mysqli_connect_errno($this->conexao)){
-                return false;
-            }else{
-                mysqli_query($this->conexao, "SET NAME 'utf8';");
-                return true;
-            }
-        }
-        public function executarQuery($sql) {
-            return mysqli_query($this->conexao, $sql);
-        }
-    }
-?>
+$host = "localhost";
+$usuario = "root";
+$senha = "";
+$banco = "teste_dados";
+
+try {
+    $conn = new PDO("mysql:host=$host;dbname=myDB", $usuario, $senha,);
+
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    printf("Connected successfully");
+} catch (PDOException $e) {
+    printf("Connection failed: " . $e->getMessage());
+}

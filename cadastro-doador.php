@@ -11,7 +11,7 @@
 
 <body class="body">
     <main class="main">
-        <form class="form form-doador" method="POST" action="./src/php/repositoriodoador.php">
+        <form class="form form-doador" method="POST" action="./src/php/cad_doador.php">
             <label class="label" for="nome">Nome do Doador</label>
             <input class="inputtext" type="text" name="nome" id="nome">
             <label class="label" for="contato1">Número Móvel do Responsável</label>
@@ -51,10 +51,10 @@
             <input class="inputtext" type="text" name="cidade" id="cidade">
             <div class="divbtn">
                 <div class="divinput">
-                    <input class="btninput" type="submit" value="Cadastrar Doação">
+                    <input class="btninput" type="submit" name="cadastrar_doacao" value="Cadastrar Doação">
                 </div>
                 <div class="divinput">
-                    <input class="btninput" type="submit" value="Cadastrar Doador">
+                    <input class="btninput" type="submit" name="cadastrar_doador" value="Cadastrar Doador">
                 </div>
             </div>
         </form>
