@@ -6,10 +6,10 @@ $senha = "";
 $banco = "teste_dados";
 
 try {
-    $conn = new PDO("mysql:host=$host;dbname=myDB", $usuario, $senha,);
-
+    $conn = new PDO("mysql:host=$host;dbname=$banco", $usuario, $senha,);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    printf("Connected successfully");
-} catch (PDOException $e) {
-    printf("Connection failed: " . $e->getMessage());
+    printf("<p>Connected successfully</p>");
+} catch (PDOException $err) {
+    printf("<script type='text/javascript'>alert('Connection failed');</script>");
+    printf("Connection failed: " . $err->getMessage());
 }
