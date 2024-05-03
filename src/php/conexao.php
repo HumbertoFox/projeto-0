@@ -13,3 +13,5 @@ try {
     printf("<script type='text/javascript'>alert('Connection failed');</script>");
     printf("Connection failed: " . $err->getMessage());
 }
+
+$dados = filter_input_array(INPUT_POST, FILTER_DEFAULT);
