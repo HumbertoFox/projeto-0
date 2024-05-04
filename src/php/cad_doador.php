@@ -2,39 +2,18 @@
 
 require 'conexao.php';
 
-if (empty($dados['nome'])) {
-    echo "<script type='text/javascript'>alert('Error: Necessário preencher o campo Nome');</script>";
-} elseif (empty($dados['contato1'])) {
-    echo "<script type='text/javascript'>alert('Error: Necessário preencher o campo contato1');</script>";
-} elseif (empty($dados['contato2'])) {
-    echo "<script type='text/javascript'>alert('Error: Necessário preencher o campo contato2');</script>";
-} elseif (empty($dados['cep'])) {
-    echo "<script type='text/javascript'>alert('Error: Necessário preencher o campo cep');</script>";
-} elseif (empty($dados['rua'])) {
-    echo "<script type='text/javascript'>alert('Error: Necessário preencher o campo Logradouro');</script>";
-} elseif (empty($dados['nunresidencia'])) {
-    echo "<script type='text/javascript'>alert('Error: Necessário preencher o campo Número');</script>";
-} elseif (empty($dados['bairro'])) {
-    echo "<script type='text/javascript'>alert('Error: Necessário preencher o campo bairro');</script>";
-} elseif (empty($dados['cidade'])) {
-    echo "<script type='text/javascript'>alert('Error: Necessário preencher o campo cidade');</script>";
-} elseif (!empty($dados['contato1'])) {
-    $query_endereco = "INSERT INTO endereco (cep, rua, nunresidencia, predio, bloco, salaap, pontoref, bairro, cidade) VALUES (:cep, :rua, :nunresidencia, :predio, :bloco, :salaap, :pontoref, :bairro, :cidade)";
+if (!empty($dados['contato1']) & !empty($dados['cep'])) {
+    $query_endereco = "INSERT INTO endereco (cep, rua, bairro, cidade) VALUES (:cep, :rua, :bairro, :cidade)";
     $cad_endereco = $conn->prepare($query_endereco);
 
     $cad_endereco->bindParam(':cep', $dados['cep']);
     $cad_endereco->bindParam(':rua', $dados['rua']);
-    $cad_endereco->bindParam(':nunresidencia', $dados['nunresidencia']);
-    $cad_endereco->bindParam(':predio', $dados['predio']);
-    $cad_endereco->bindParam(':bloco', $dados['bloco']);
-    $cad_endereco->bindParam(':salaap', $dados['salaap']);
-    $cad_endereco->bindParam(':pontoref', $dados['pontoref']);
     $cad_endereco->bindParam(':bairro', $dados['bairro']);
     $cad_endereco->bindParam(':cidade', $dados['cidade']);
 
     $cad_endereco->execute();
 
-    $query_doador = "INSERT INTO doador (codigodoador, nome, contato1, contato2, contato3, cep) VALUES (codigodoador, :nome, :contato1, :contato2, :contato3, :cep)";
+    $query_doador = "INSERT INTO doador (nome, contato1, contato2, contato3, cep) VALUES (:nome, :contato1, :contato2, :contato3, :cep)";
     $cad_doador = $conn->prepare($query_doador);
     
     $cad_doador->bindParam(':nome', $dados['nome']);
@@ -47,13 +26,19 @@ if (empty($dados['nome'])) {
     
     if ($cad_doador->rowCount()) {
         $_SESSION['codigodoador'] = $conn->lastInsertId();
-        
     }
-} elseif (isset($dados['cadastrar_doacao'])) {
-    echo "<script type='text/javascript'>alert('Doador Cadastrado Com sucesso!');</script>";
-    header('Location: http://localhost/projeto-0/cadastro-doacao.php');
-    die();
-} elseif (isset($dados['cadastrar_doador'])) {
-    header('Location: http://localhost/projeto-0/gerar-relatorio.html');
-    die();
+
+    $query_residencia = "INSERT INTO residencia (cep, nunresidencia, predio, bloco, salaap, pontoref) VALUES (:cep, :nunresidencia, :predio, :bloco, :salaap, :pontoref)";
+    $cad_residencia = $conn->prepare($query_residencia);
+
+    $cad_residencia->bindParam(':cep', $dados['cep']);
+    $cad_residencia->bindParam(':nunresidencia', $dados['nunresidencia']);
+    $cad_residencia->bindParam(':predio', $dados['predio']);
+    $cad_residencia->bindParam(':bloco', $dados['bloco']);
+    $cad_residencia->bindParam(':salaap', $dados['salaap']);
+    $cad_residencia->bindParam(':pontoref', $dados['pontoref']);
+
+    $cad_residencia->execute();
+} else {
+    printf("Fill in the Name and/or zip code! <br>");
 }

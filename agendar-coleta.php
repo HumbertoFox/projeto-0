@@ -13,8 +13,8 @@
     <main class="main">
         <div class="div-form-left">
             <form class="form form-numero-ficha" method="POST" action="./src/php/pesq_doador.php">
-                <label class="label" for="codigoficha">Código da Doação/Nome/Telefone/Cód Doador</label>
-                <input class="inputtext" type="search" name="codigoficha" id="codigoficha">
+                <label class="label" for="codigodoacao">Código da Doação/Nome/Telefone/Cód Doador</label>
+                <input class="inputtext" type="search" name="codigodoacao" id="codigodoacao">
                 <div class="divinput divbtnleft">
                     <input class="btninput" type="submit" value="Pesquisar">
                 </div>
