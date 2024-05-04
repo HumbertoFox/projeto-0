@@ -3,7 +3,7 @@
 require 'conexao.php';
 
 if (!empty($dados['objeto1']) & !empty($dados['quant1'])) {
-    $query_doacao = "INSERT INTO doacao (objeto1, quant1, objeto2, quant2, objeto3, quant3, objeto4, quant4, objeto5, quant5, objeto6, quant6, objeto7, quant7, objeto8, quant8, objeto9, quant9, objeto10, quant10, objeto11, quant11, objeto12, quant12, objeto13, quant13, objeto14, quant14) VALUES (:objeto1, :quant1, :objeto2, :quant2, :objeto3, :quant3, :objeto4, :quant4, :objeto5, :quant5, :objeto6, :quant6, :objeto7, :quant7, :objeto8, :quant8, :objeto9, :quant9, :objeto10, :quant10, :objeto11, :quant11, :objeto12, :quant12, :objeto13, :quant13, :objeto14, :quant14)";
+    $query_doacao = "INSERT INTO doacao (objeto1, quant1, objeto2, quant2, objeto3, quant3, objeto4, quant4, objeto5, quant5, objeto6, quant6, objeto7, quant7, objeto8, quant8, objeto9, quant9, objeto10, quant10, objeto11, quant11, objeto12, quant12, objeto13, quant13, objeto14, quant14, obs) VALUES (:objeto1, :quant1, :objeto2, :quant2, :objeto3, :quant3, :objeto4, :quant4, :objeto5, :quant5, :objeto6, :quant6, :objeto7, :quant7, :objeto8, :quant8, :objeto9, :quant9, :objeto10, :quant10, :objeto11, :quant11, :objeto12, :quant12, :objeto13, :quant13, :objeto14, :quant14, :obs)";
     $cad_doacao = $conn->prepare($query_doacao);
 
     $cad_doacao->bindParam(':objeto1', $dados['objeto1']);
@@ -34,6 +34,7 @@ if (!empty($dados['objeto1']) & !empty($dados['quant1'])) {
     $cad_doacao->bindParam(':quant13', $dados['quant13']);
     $cad_doacao->bindParam(':objeto14', $dados['objeto14']);
     $cad_doacao->bindParam(':quant14', $dados['quant14']);
+    $cad_doacao->bindParam(':obs', $dados['obs']);
 
     $cad_doacao->execute();
 
@@ -41,5 +42,5 @@ if (!empty($dados['objeto1']) & !empty($dados['quant1'])) {
         $_SESSION['codigodoacao'] = $conn->lastInsertId();
     }
 } else {
-    printf("<br>Fill in at least one object field and/or one quantity field!");
+    print "<span style='color: #A00;'>Fill in at least one object field and/or one quantity field!</span><br>";
 }
