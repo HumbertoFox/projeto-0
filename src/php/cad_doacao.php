@@ -41,5 +41,5 @@ if (!empty($dados['objeto1']) & !empty($dados['quant1'])) {
         $_SESSION['codigodoacao'] = $conn->lastInsertId();
     }
 } else {
-    printf("Fill in at least one object field and/or one quantity field! <br>");
+    printf("<br>Fill in at least one object field and/or one quantity field!");
 }

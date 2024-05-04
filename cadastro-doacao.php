@@ -64,7 +64,7 @@
                     <label class="label" for="objeto1">objeto 1</label>
                     <input class="inputtext" type="text" name="objeto1" id="objeto1">
                     <label class="label" for="quant1">Qantidade/Caixa/Sacola</label>
-                    <input class="inputtext" type="text" name="quant1'" id="quant1">
+                    <input class="inputtext" type="text" name="quant1" id="quant1">
                     <label class="label" for="objeto2">objeto 2</label>
                     <input class="inputtext" type="text" name="objeto2" id="objeto2">
                     <label class="label" for="quant2">Qantidade/Caixa/Sacola</label>
