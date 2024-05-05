@@ -14,3 +14,4 @@ try {
 }
 
 $dados = filter_input_array(INPUT_POST, FILTER_DEFAULT);
+$DATA_HOJE = date("d/m/Y");

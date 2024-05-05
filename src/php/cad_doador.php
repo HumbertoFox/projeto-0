@@ -13,7 +13,7 @@ if (!empty($dados['contato1']) & !empty($dados['cep'])) {
 
     $cad_endereco->execute();
 
-    $query_doador = "INSERT INTO doador (nome, contato1, contato2, contato3, cep) VALUES (:nome, :contato1, :contato2, :contato3, :cep)";
+    $query_doador = "INSERT INTO doador (nome, contato1, contato2, contato3, cep, datacadastro) VALUES (:nome, :contato1, :contato2, :contato3, :cep, STR_TO_DATE('$DATA_HOJE', '%d/%m/%Y'))";
     $cad_doador = $conn->prepare($query_doador);
     
     $cad_doador->bindParam(':nome', $dados['nome']);
@@ -39,6 +39,7 @@ if (!empty($dados['contato1']) & !empty($dados['cep'])) {
     $cad_residencia->bindParam(':pontoref', $dados['pontoref']);
 
     $cad_residencia->execute();
+    
 } else {
     print "<span style='color: #A00;'>Fill in the Name and/or zip code!</span><br>";
 }

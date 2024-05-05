@@ -3,9 +3,11 @@
 require 'conexao.php';
 
 if (!empty($dados['objeto1']) & !empty($dados['quant1'])) {
-    $query_doacao = "INSERT INTO doacao (objeto1, quant1, objeto2, quant2, objeto3, quant3, objeto4, quant4, objeto5, quant5, objeto6, quant6, objeto7, quant7, objeto8, quant8, objeto9, quant9, objeto10, quant10, objeto11, quant11, objeto12, quant12, objeto13, quant13, objeto14, quant14, obs) VALUES (:objeto1, :quant1, :objeto2, :quant2, :objeto3, :quant3, :objeto4, :quant4, :objeto5, :quant5, :objeto6, :quant6, :objeto7, :quant7, :objeto8, :quant8, :objeto9, :quant9, :objeto10, :quant10, :objeto11, :quant11, :objeto12, :quant12, :objeto13, :quant13, :objeto14, :quant14, :obs)";
+    $query_doacao = "INSERT INTO doacao (codigodoador, codigoresidencia, objeto1, quant1, objeto2, quant2, objeto3, quant3, objeto4, quant4, objeto5, quant5, objeto6, quant6, objeto7, quant7, objeto8, quant8, objeto9, quant9, objeto10, quant10, objeto11, quant11, objeto12, quant12, objeto13, quant13, objeto14, quant14, obs, datacadastro) VALUES (:codigodoador, :codigoresidencia, :objeto1, :quant1, :objeto2, :quant2, :objeto3, :quant3, :objeto4, :quant4, :objeto5, :quant5, :objeto6, :quant6, :objeto7, :quant7, :objeto8, :quant8, :objeto9, :quant9, :objeto10, :quant10, :objeto11, :quant11, :objeto12, :quant12, :objeto13, :quant13, :objeto14, :quant14, :obs, STR_TO_DATE('$DATA_HOJE', '%d/%m/%Y'))";
     $cad_doacao = $conn->prepare($query_doacao);
 
+    $cad_doacao->bindParam(':codigodoador', $dados['codigodoador']);
+    $cad_doacao->bindParam(':codigoresidencia', $dados['codigoresidencia']);
     $cad_doacao->bindParam(':objeto1', $dados['objeto1']);
     $cad_doacao->bindParam(':quant1', $dados['quant1']);
     $cad_doacao->bindParam(':objeto2', $dados['objeto2']);
