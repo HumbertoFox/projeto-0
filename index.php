@@ -1,3 +1,12 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['formulario'])) {
+    $_SESSION['formulario'] = 0;
+}
+$_SESSION['formulario'] = 4;
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -62,7 +71,25 @@
             </nav>
         </header>
         <section class="sectionmenu">
-            <iframe src="gerar-relatorio.html" title="relatório" name="menuprincipal" frameborder="0"></iframe>
+            <iframe src="gerar-relatorio.php" title="relatório" name="menuprincipal" frameborder="0">
+                <?php
+                if ($_SESSION['formulario'] == 0) {
+                    include_once './gerar-relatorio.php';
+                } elseif ($_SESSION['formulario'] == 1) {
+                    include_once './cadastro-doador.php';
+                } elseif ($_SESSION['formulario'] == 2) {
+                    include_once './cadastro-doacao.php';
+                } elseif ($_SESSION['formulario'] == 3) {
+                    include_once './agendar-coleta.php';
+                } elseif ($_SESSION['formulario'] == 4) {
+                    include_once './confirmar-coleta.html';
+                } elseif ($_SESSION['formulario'] == 5) {
+                    include_once './editar-doador.html';
+                } elseif ($_SESSION['formulario'] == 6) {
+                    include_once './editar-doacao.html';
+                }
+                ?>
+            </iframe>
         </section>
 
         <script src="./src/js/menu.js"></script>
