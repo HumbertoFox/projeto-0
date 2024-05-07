@@ -10,8 +10,9 @@ input::-webkit-inner-spin-button {
 }
 
 .body {
-    display: flex;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .main {
@@ -100,6 +101,10 @@ input[type="radio"] {
 .fieldset-doador {
     display: flex;
     flex-direction: column;
+}
+
+.error_php {
+    color: #A00;
 }
 
 @media (max-width: 610px) {

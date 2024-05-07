@@ -1,3 +1,7 @@
+<?php
+include_once './src/php/cad_doador.php';
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
