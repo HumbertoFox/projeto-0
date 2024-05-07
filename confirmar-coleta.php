@@ -1,8 +1,3 @@
-<?php 
-session_start();
-
-?>
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -17,7 +12,7 @@ session_start();
 <body class="body">
     <main class="main">
         <div class="div-form-left">
-            <form class="form form-numero-ficha" method="POST" action="./src/php/pesq_doador.php">
+            <form class="form form-numero-ficha" method="POST" action="">
                 <label class="label" for="codigoficha">Número Ficha/Código/Telefone/Nome Doador</label>
                 <input class="inputtext" type="search" name="codigoficha" id="codigoficha">
                 <div class="divinput">

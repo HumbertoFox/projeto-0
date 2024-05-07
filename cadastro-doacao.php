@@ -1,8 +1,3 @@
-<?php 
-session_start();
-
-?>
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -17,7 +12,7 @@ session_start();
 <body class="body">
     <main class="main">
         <div class="div-form-left">
-            <form class="form form-numero-ficha" method="POST" action="./src/php/pesq_doador.php">
+            <form class="form form-numero-ficha" method="POST" action="">
                 <label class="label" for="codnometel">Nome/Telefone/Código do doador</label>
                 <input class="inputtext" type="search" name="codnometel" id="codnometel">
                 <div class="divinput divbtnleft">
@@ -62,7 +57,7 @@ session_start();
                 </fieldset>
             </form>
         </div>
-        <form class="form form-infor-objetos" method="POST" action="./src/php/cad_doacao.php">
+        <form class="form form-infor-objetos" method="POST" action="">
             <legend class="label legend">Lista de objetos a serem doados</legend>
             <div class="div-objetos">
                 <div class="div-objetos0">

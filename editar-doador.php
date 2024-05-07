@@ -1,8 +1,3 @@
-<?php 
-session_start();
-
-?>
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -17,14 +12,14 @@ session_start();
 
 <body class="body">
     <main class="main">
-        <form class="form form-numero-ficha" method="POST" action="./src/php/pesq_doador.php">
+        <form class="form form-numero-ficha" method="POST" action="">
             <label class="label" for="codigodoador">Código/Telefone/Nome do Doador</label>
             <input class="inputtext" type="search" name="codigodoador" id="codigodoador">
             <div class="divinput">
                 <input class="btninput" type="submit" value="Pesquisar">
             </div>
         </form>
-        <form class="form form-doador" method="POST" action="./src/php/edit_doador.php">
+        <form class="form form-doador" method="POST" action="">
             <label class="label" for="codigodoador">Código do Doador</label>
             <input class="inputtext" type="number" name="codigodoador" id="codigodoador" readonly>
             <label class="label" for="nome">Nome do Doador</label>
@@ -36,8 +31,7 @@ session_start();
             <label class="label" for="contato3">Número Fixo do Contato/Opcional ou Ramal</label>
             <input class="inputtext" type="tel" name="contato3" id="contato3">
             <label class="label" for="cep">Cep</label>
-            <input class="inputtext" type="number" name="cep" id="cep" maxlength="9" value=""
-                onblur="pesquisacep(this.value);">
+            <input class="inputtext" type="number" name="cep" id="cep" maxlength="9" value="" onblur="pesquisacep(this.value);">
             <label class="label" for="rua">Logradouro: Av/Travessa/Rua</label>
             <input class="inputtext" type="text" name="rua" id="rua">
             <label class="label" for="nunresidencia">Número da Casa/Edifício/Empresa</label>

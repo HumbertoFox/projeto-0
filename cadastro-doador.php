@@ -1,8 +1,3 @@
-<?php 
-session_start();
-
-?>
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -16,7 +11,7 @@ session_start();
 
 <body class="body">
     <main class="main">
-        <form class="form form-doador" method="POST" action="./src/php/cad_doador.php">
+        <form class="form form-doador" method="POST" action="">
             <label class="label" for="nome">Nome do Doador</label>
             <input class="inputtext" type="text" name="nome" id="nome">
             <label class="label" for="contato1">Número Móvel do Responsável</label>
