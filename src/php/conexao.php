@@ -1,5 +1,8 @@
 <?php
 
+$dados = filter_input_array(INPUT_POST, FILTER_DEFAULT);
+$DATA_HOJE = date("d/m/Y");
+
 $host = "localhost";
 $usuario = "root";
 $senha = "";
@@ -12,6 +15,3 @@ try {
 } catch (PDOException $err) {
     print "<span style='color: #A00;'>Connection failed!:</span><br>" . $err->getMessage();
 }
-
-$dados = filter_input_array(INPUT_POST, FILTER_DEFAULT);
-$DATA_HOJE = date("d/m/Y");

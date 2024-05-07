@@ -1,3 +1,8 @@
+<?php 
+session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -65,7 +70,7 @@
         </form>
     </main>
 
-    <script src="./src/js/caddoador.js"></script>
+    <script src="./src/js/cad_doador.js"></script>
     <script src="./src/js/viacep.js"></script>
 </body>
 

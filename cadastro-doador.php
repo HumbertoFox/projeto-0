@@ -1,3 +1,8 @@
+<?php 
+session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -21,8 +26,7 @@
             <label class="label" for="contato3">Número Fixo do Contato/Opcional ou Ramal</label>
             <input class="inputtext" type="tel" name="contato3" id="contato3">
             <label class="label" for="cep">Cep</label>
-            <input class="inputtext" type="number" name="cep" id="cep" maxlength="9" value=""
-                onblur="pesquisacep(this.value);">
+            <input class="inputtext" type="number" name="cep" id="cep" maxlength="9" value="" onblur="pesquisacep(this.value);">
             <label class="label" for="rua">Logradouro: Av/Travessa/Rua</label>
             <input class="inputtext" type="text" name="rua" id="rua">
             <label class="label" for="nunresidencia">Número da Casa/Edifício/Empresa</label>
@@ -60,7 +64,7 @@
         </form>
     </main>
 
-    <script src="./src/js/caddoador.js"></script>
+    <script src="./src/js/cad_doador.js"></script>
     <script src="./src/js/viacep.js"></script>
 </body>
 

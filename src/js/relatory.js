@@ -25,5 +25,3 @@ function diaDoMesDown() {
         return diaNoMesDownOne;
     };
 };
-
-diaDoMesDown();

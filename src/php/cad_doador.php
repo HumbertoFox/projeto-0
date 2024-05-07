@@ -1,6 +1,6 @@
 <?php
 
-require 'conexao.php';
+include_once 'conexao.php';
 
 if (!empty($dados['contato1']) & !empty($dados['cep'])) {
     $query_endereco = "INSERT INTO endereco (cep, rua, bairro, cidade) VALUES (:cep, :rua, :bairro, :cidade)";
