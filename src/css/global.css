@@ -40,7 +40,13 @@ input[type="radio"] {
 }
 
 .div-form-left {
+    max-width: 280px;
     margin-right: 10px;
+}
+
+.form-numero-ficha,
+.form-doador {
+    max-width: 280px;
 }
 
 .div-infor-obs,
@@ -81,7 +87,7 @@ input[type="radio"] {
 }
 
 .form .btninput {
-    width: 150px;
+    width: 130px;
     height: 30px;
     display: flex;
     justify-content: center;
