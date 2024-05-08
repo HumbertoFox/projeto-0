@@ -1,3 +1,9 @@
+<?php 
+session_start();
+
+include_once './src/php/cad_doacao.php';
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -16,7 +22,7 @@
                 <label class="label" for="codnometel">Nome/Telefone/Código do doador</label>
                 <input class="inputtext" type="search" name="codnometel" id="codnometel">
                 <div class="divinput divbtnleft">
-                    <input class="btninput" type="submit" value="Pesquisar">
+                    <input class="btninput" type="submit" name="pesq_doador" value="Pesquisar">
                 </div>
             </form>
             <form class="form form-infor-doador">
