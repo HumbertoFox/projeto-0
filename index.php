@@ -70,7 +70,7 @@ session_start();
             </iframe>
         </section>
     </main>
-    <script src="./src/js/menu.js"></script>
+    <script type="module" src="./src/js/menu.js"></script>
 </body>
 
 </html>

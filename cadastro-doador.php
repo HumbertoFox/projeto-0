@@ -65,7 +65,7 @@ include_once './src/php/cad_doador.php';
         </form>
     </main>
 
-    <script src="./src/js/cad_doador.js"></script>
+    <script type="module" src="./src/js/cad_doador.js"></script>
     <script src="./src/js/viacep.js"></script>
 </body>
 
