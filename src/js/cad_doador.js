@@ -69,3 +69,5 @@ function clicarEmpresa() {
     };
     document.getElementById("cnpj").focus();
 };
+
+export { clickCasa, clickEdficio, clickEmpresa, clicarCasa, clicarEdificio, clicarEmpresa };

@@ -64,7 +64,7 @@
         </form>
     </main>
 
-    <script type="module" src="./src/js/cad_doador.js"></script>
+    <script type="module" src="./src/js/edit_doador.js"></script>
     <script src="./src/js/viacep.js"></script>
 </body>
 
