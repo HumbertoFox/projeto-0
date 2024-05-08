@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 include_once './src/php/cad_doador.php';
 ?>
 
@@ -54,10 +56,10 @@ include_once './src/php/cad_doador.php';
             <input class="inputtext" type="text" name="cidade" id="cidade">
             <div class="divbtn">
                 <div class="divinput">
-                    <input class="btninput" type="submit" name="cadastrar_doacao" value="Cadastrar Doação">
+                    <input class="btninput" type="submit" name="cadastrar_doacao" id="cadastrar_doacao" value="Cadastrar Doação">
                 </div>
                 <div class="divinput">
-                    <input class="btninput" type="submit" name="cadastrar_doador" value="Cadastrar Doador">
+                    <input class="btninput" type="submit" name="cadastrar_doador" id="cadastrar_doador" value="Cadastrar Doador">
                 </div>
             </div>
         </form>

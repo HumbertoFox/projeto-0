@@ -11,7 +11,7 @@ $banco = "teste_dados";
 try {
     $conn = new PDO("mysql:host=$host;dbname=$banco", $usuario, $senha,);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    // echo "<span style='sucess_php'>Connected successfully!</span><br>";
+    // echo "<span class='sucess_php'>Connected successfully!</span><br>";
 } catch (PDOException $err) {
     echo "<span class='error_php'>Connection failed!:</span><br>" . $err->getMessage();
 }

@@ -107,6 +107,10 @@ input[type="radio"] {
     color: #A00;
 }
 
+.sucess_php {
+    color: #0A0;
+}
+
 @media (max-width: 610px) {
     .main {
         flex-wrap: wrap;

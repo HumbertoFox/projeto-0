@@ -1,10 +1,10 @@
 const clickCasa = document.getElementById('casa');
 const clickEdficio = document.getElementById('edificio');
 const clickEmpresa = document.getElementById('empresa');
-const selectCnpj = document.getElementsByClassName('cnpj');
-const selectEdificio = document.getElementsByClassName('edificio');
-const selectBloco = document.getElementsByClassName('bloco');
-const selectApartamento = document.getElementsByClassName('apartamento');
+const selectCnpj = document.getElementById('cnpj');
+const selectEdificio = document.getElementById('edificio');
+const selectBloco = document.getElementById('bloco');
+const selectApartamento = document.getElementById('apartamento');
 
 clickCasa.addEventListener('click', clicarCasa);
 clickEdficio.addEventListener('click', clicarEdificio);
