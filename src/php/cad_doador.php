@@ -5,15 +5,31 @@ require_once 'conexao.php';
 if (isset($dados['cadastrar_doacao']) || isset($dados['cadastrar_doador'])) {
 
     if (!empty($dados['contato1']) & !empty($dados['cep'])) {
-        $query_endereco = "INSERT INTO endereco (cep, rua, bairro, cidade) VALUES (:cep, :rua, :bairro, :cidade)";
-        $cad_endereco = $conn->prepare($query_endereco);
 
-        $cad_endereco->bindParam(':cep', $dados['cep']);
-        $cad_endereco->bindParam(':rua', $dados['rua']);
-        $cad_endereco->bindParam(':bairro', $dados['bairro']);
-        $cad_endereco->bindParam(':cidade', $dados['cidade']);
+        $query_ceps = "SELECT cep FROM endereco WHERE cep LIKE :cep";
+        $res_ceps = $conn->prepare($query_ceps);
 
-        $cad_endereco->execute();
+        $res_ceps->bindParam(':cep', $dados['cep']);
+
+        $res_ceps->execute();
+
+        while ($row_cep = $res_ceps->fetch(PDO::FETCH_ASSOC)) {
+
+            $_SESSION['rescep'] = $row_cep['cep'];
+        }
+
+        if ($_SESSION['rescep'] != $dados['cep']) {
+
+            $query_endereco = "INSERT INTO endereco (cep, rua, bairro, cidade) VALUES (:cep, :rua, :bairro, :cidade)";
+            $cad_endereco = $conn->prepare($query_endereco);
+
+            $cad_endereco->bindParam(':cep', $dados['cep']);
+            $cad_endereco->bindParam(':rua', $dados['rua']);
+            $cad_endereco->bindParam(':bairro', $dados['bairro']);
+            $cad_endereco->bindParam(':cidade', $dados['cidade']);
+
+            $cad_endereco->execute();
+        }
 
         $query_doador = "INSERT INTO doador (nome, contato1, contato2, contato3, cep, datacadastro) VALUES (:nome, :contato1, :contato2, :contato3, :cep, STR_TO_DATE('$DATA_HOJE', '%d/%m/%Y'))";
         $cad_doador = $conn->prepare($query_doador);
@@ -41,7 +57,7 @@ if (isset($dados['cadastrar_doacao']) || isset($dados['cadastrar_doador'])) {
         $cad_residencia->bindParam(':pontoref', $dados['pontoref']);
 
         $cad_residencia->execute();
-        
+
         echo "<span class='sucess_php'>Successfully registered donor!</span><br>";
 
         if (isset($dados['cadastrar_doacao'])) {
