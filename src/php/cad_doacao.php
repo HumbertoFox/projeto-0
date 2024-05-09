@@ -2,26 +2,6 @@
 
 include_once 'conexao.php';
 
-if (isset($dados['pesq_doador'])) {
-
-    if (!empty($dados['codnometel'])) {
-        $nome = "%" . $dados['codnometel'] . "%";
-
-        $query_doadores = "SELECT * FROM doador WHERE nome LIKE :nome ORDER BY nome ASC";
-        $res_doadores = $conn->prepare($query_doadores);
-
-        $res_doadores->bindParam(':nome', $nome);
-
-        $res_doadores->execute();
-
-        while ($row_doador = $res_doadores->fetch(PDO::FETCH_ASSOC)) {
-            var_dump($row_doador);
-        }
-    } else {
-        echo "<span class='error_php'>Name, Phone Number or Donor Code Wrong or empty field!</span><br>";
-    }
-}
-
 if (isset($dados['cadastrar_doacao']) || isset($dados['cadastrar_agendar'])) {
     if (!empty($dados['objeto1']) & !empty($dados['quant1'])) {
         $query_doacao = "INSERT INTO doacao (codigodoador, codigoresidencia, objeto1, quant1, objeto2, quant2, objeto3, quant3, objeto4, quant4, objeto5, quant5, objeto6, quant6, objeto7, quant7, objeto8, quant8, objeto9, quant9, objeto10, quant10, objeto11, quant11, objeto12, quant12, objeto13, quant13, objeto14, quant14, obs, datacadastro) VALUES (:codigodoador, :codigoresidencia, :objeto1, :quant1, :objeto2, :quant2, :objeto3, :quant3, :objeto4, :quant4, :objeto5, :quant5, :objeto6, :quant6, :objeto7, :quant7, :objeto8, :quant8, :objeto9, :quant9, :objeto10, :quant10, :objeto11, :quant11, :objeto12, :quant12, :objeto13, :quant13, :objeto14, :quant14, :obs, STR_TO_DATE('$DATA_HOJE', '%d/%m/%Y'))";
