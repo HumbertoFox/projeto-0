@@ -21,7 +21,7 @@ if (isset($dados['cep'])) {
     $cep = $dados['cep'];
 }
 if (isset($dados['$rua'])) {
-    $$rua = $dados['$rua'];
+    $rua = $dados['$rua'];
 }
 if (isset($dados['nunresidencia'])) {
     $nunresidencia = $dados['nunresidencia'];
