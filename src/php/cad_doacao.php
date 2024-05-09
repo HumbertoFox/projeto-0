@@ -1,6 +1,6 @@
 <?php
 
-include_once 'conexao.php';
+require_once 'conexao.php';
 
 if (isset($dados['cadastrar_doacao']) || isset($dados['cadastrar_agendar'])) {
     if (!empty($dados['objeto1']) & !empty($dados['quant1'])) {

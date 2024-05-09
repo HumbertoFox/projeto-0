@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-include_once './src/php/cad_doador.php';
+require_once './src/php/cad_doador.php';
 
 $nome = $contato1 = $contato2 = $contato3 = $cep = $rua = $nunresidencia = $cnpj = $predio = $bloco = $salaap = $pontoref = $bairro = $cidade = "";
 

@@ -1,7 +1,8 @@
 <?php
 session_start();
 
-include_once './src/php/cad_doacao.php';
+require_once './src/php/cad_doacao.php';
+
 $codigodoador = $nome = $contato1 = $contato2 = $contato3 = $cep = $rua = $nunresidencia = $cnpj = $predio = $bloco = $salaap = $pontoref = $bairro = $cidade = "";
 
 if (isset($dados['pesq_doador'])) {
