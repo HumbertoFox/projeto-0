@@ -81,7 +81,7 @@ if (isset($dados['cadastrar_doacao']) || isset($dados['cadastrar_doador'])) {
         $cad_residencia->execute();
 
         echo "<span class='sucess_php'>Successfully registered donor!</span><br>";
-var_dump($dados);
+
         if (isset($dados['cadastrar_doacao'])) {
             header('Location: ./cadastro-doacao.php');
         } else {
