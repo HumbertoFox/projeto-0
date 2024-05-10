@@ -31,6 +31,28 @@ if (isset($dados['cadastrar_doacao']) || isset($dados['cadastrar_doador'])) {
             $cad_endereco->execute();
         }
 
+        $query_contatos = "SELECT contato1 FROM telefone WHERE contato1 LIKE :contato1";
+        $res_contatos = $conn->prepare($query_contatos);
+
+        $res_contatos->bindParam(':contato1', $dados['contato1']);
+
+        $res_contatos->execute();
+
+        while ($row_contato = $res_contatos->fetch(PDO::FETCH_ASSOC)) {
+
+            $_SESSION['rescontato1'] = $row_contato['contato1'];
+        }
+
+        if ($_SESSION['rescontato1'] != $dados['contato1']) {
+
+            $query_telefone = "INSERT INTO telefone (contato1) VALUES (:contato1)";
+            $cad_telefone = $conn->prepare($query_telefone);
+
+            $cad_telefone->bindParam(':contato1', $dados['contato1']);
+
+            $cad_telefone->execute();
+        }
+
         $query_doador = "INSERT INTO doador (nome, contato1, contato2, contato3, cep, datacadastro) VALUES (:nome, :contato1, :contato2, :contato3, :cep, STR_TO_DATE('$DATA_HOJE', '%d/%m/%Y'))";
         $cad_doador = $conn->prepare($query_doador);
 
@@ -59,7 +81,7 @@ if (isset($dados['cadastrar_doacao']) || isset($dados['cadastrar_doador'])) {
         $cad_residencia->execute();
 
         echo "<span class='sucess_php'>Successfully registered donor!</span><br>";
-
+var_dump($dados);
         if (isset($dados['cadastrar_doacao'])) {
             header('Location: ./cadastro-doacao.php');
         } else {
