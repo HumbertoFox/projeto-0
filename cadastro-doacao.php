@@ -13,10 +13,10 @@ if (isset($_SESSION['codigodoador']) != "") {
     $codnometel = "";
 }
 
-if (isset($dados['pesq_doador'])) {
+if (isset($dados['pesq_nome'])) {
 
     if (!empty($dados['codnometel'])) {
-        $nome = "%" . $dados['codnometel'] . "%";
+        $nome = $dados['codnometel'] . "%";
 
         $query_doadores = "SELECT * FROM doador INNER JOIN endereco ON doador.cep = endereco.cep INNER JOIN residencia ON endereco.cep = residencia.cep WHERE nome LIKE :nome ORDER BY nome ASC";
         $res_doadores = $conn->prepare($query_doadores);
@@ -93,10 +93,12 @@ if (isset($dados['pesq_doador'])) {
     <main class="main">
         <div class="div-form-left">
             <form class="form form-numero-ficha" method="POST" action="">
-                <label class="label" for="codnometel">Nome/Telefone/Código do doador</label>
+                <label class="label" for="codnometel">Pesquisar por Nome/Telefone/Código do doador</label>
                 <input class="inputtext" type="search" name="codnometel" id="codnometel" value="<?php echo $codnometel; ?>">
                 <div class="divinput divbtnleft">
-                    <input class="btninput" type="submit" name="pesq_doador" value="Pesquisar">
+                    <input class="btninput btninput-pesqisa" type="submit" name="pesq_codigo" value="Código">
+                    <input class="btninput btninput-pesqisa" type="submit" name="pesq_nome" value="Nome">
+                    <input class="btninput btninput-pesqisa" type="submit" name="pesq_telefone" value="Telefone">
                 </div>
             </form>
             <form class="form form-infor-doador">

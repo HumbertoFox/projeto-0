@@ -82,6 +82,10 @@ input[type="radio"] {
     justify-content: center;
 }
 
+.form .divinput.divbtnleft {
+    justify-content: space-evenly;
+}
+
 .ocutar {
     display: none;
 }
@@ -96,6 +100,10 @@ input[type="radio"] {
     text-shadow: 1px 1px 0.5px #79D1FF;
     cursor: pointer;
     transition: .3s ease-in-out;
+}
+
+.form .btninput.btninput-pesqisa {
+    width: 60px;
 }
 
 .form .btninput:hover {
@@ -115,6 +123,12 @@ input[type="radio"] {
 
 .sucess_php {
     color: #0A0;
+}
+
+@media (max-width: 830px) {
+    .form-infor-objetos {
+        max-width: 280px;
+    }
 }
 
 @media (max-width: 610px) {
