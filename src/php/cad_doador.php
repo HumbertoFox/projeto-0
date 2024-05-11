@@ -18,7 +18,7 @@ if (isset($dados['cadastrar_doacao']) || isset($dados['cadastrar_doador'])) {
             $_SESSION['rescep'] = $row_cep['cep'];
         }
 
-        if ($_SESSION['rescep'] != $dados['cep']) {
+        if (isset($_SESSION['rescep']) != isset($dados['cep'])) {
 
             $query_endereco = "INSERT INTO endereco (cep, rua, bairro, cidade) VALUES (:cep, :rua, :bairro, :cidade)";
             $cad_endereco = $conn->prepare($query_endereco);
@@ -43,7 +43,7 @@ if (isset($dados['cadastrar_doacao']) || isset($dados['cadastrar_doador'])) {
             $_SESSION['rescontato1'] = $row_contato['contato1'];
         }
 
-        if ($_SESSION['rescontato1'] != $dados['contato1']) {
+        if (isset($_SESSION['rescontato1']) != isset($dados['contato1'])) {
 
             $query_telefone = "INSERT INTO telefone (contato1) VALUES (:contato1)";
             $cad_telefone = $conn->prepare($query_telefone);
@@ -65,6 +65,7 @@ if (isset($dados['cadastrar_doacao']) || isset($dados['cadastrar_doador'])) {
         $cad_doador->execute();
 
         if ($cad_doador->rowCount()) {
+            
             $_SESSION['codigodoador'] = $conn->lastInsertId();
         }
 
