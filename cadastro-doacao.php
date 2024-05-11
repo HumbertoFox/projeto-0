@@ -5,6 +5,14 @@ require_once './src/php/cad_doacao.php';
 
 $codigodoador = $nome = $contato1 = $contato2 = $contato3 = $cep = $rua = $nunresidencia = $cnpj = $predio = $bloco = $salaap = $pontoref = $bairro = $cidade = "";
 
+if (isset($_SESSION['codigodoador']) != "") {
+
+    $codnometel = $_SESSION['codigodoador'];
+} else {
+
+    $codnometel = "";
+}
+
 if (isset($dados['pesq_doador'])) {
 
     if (!empty($dados['codnometel'])) {
@@ -86,7 +94,7 @@ if (isset($dados['pesq_doador'])) {
         <div class="div-form-left">
             <form class="form form-numero-ficha" method="POST" action="">
                 <label class="label" for="codnometel">Nome/Telefone/Código do doador</label>
-                <input class="inputtext" type="search" name="codnometel" id="codnometel">
+                <input class="inputtext" type="search" name="codnometel" id="codnometel" value="<?php echo $codnometel; ?>">
                 <div class="divinput divbtnleft">
                     <input class="btninput" type="submit" name="pesq_doador" value="Pesquisar">
                 </div>
