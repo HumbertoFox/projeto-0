@@ -53,10 +53,7 @@ body {
 }
 
 @media (max-width: 800px) {
-    .div-relatory-0 {
-        flex-wrap: wrap;
-    }
-
+    .div-relatory-0,
     .container-relatory-1-2 {
         flex-wrap: wrap;
     }
