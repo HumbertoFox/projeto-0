@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Relatório</title>
     <link rel="stylesheet" href="./src/css/reset.css">
-    <link rel="stylesheet" href="./src/css/relatory.css">
+    <link rel="stylesheet" href="./src/css/report.css">
 </head>
 
 <body class="body">
