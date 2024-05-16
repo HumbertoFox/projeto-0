@@ -15,7 +15,7 @@
             <form class="form form-numero-ficha" method="POST" action="">
                 <label class="label" for="codigoficha">Número Ficha/Código/Telefone/Nome Doador</label>
                 <input class="inputtext" type="search" name="codigoficha" id="codigoficha">
-                <div class="divinput">
+                <div class="divinput divbtnleft">
                     <input class="btninput" type="submit" value="Pesquisar">
                 </div>
             </form>
