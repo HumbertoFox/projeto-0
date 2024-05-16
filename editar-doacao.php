@@ -64,65 +64,145 @@
             </div>
             <legend class="label legend">Lista de objetos a serem doados</legend>
             <div class="div-objetos">
-                <div class="div-objetos0">
-                    <label class="label" for="objeto1">objeto 1</label>
-                    <input class="inputtext" type="text" name="objeto1" id="objeto1">
-                    <label class="label" for="quant1">Qantidade/Caixa/Sacola</label>
-                    <input class="inputtext" type="text" name="quant1'" id="quant1">
-                    <label class="label" for="objeto2">objeto 2</label>
-                    <input class="inputtext" type="text" name="objeto2" id="objeto2">
-                    <label class="label" for="quant2">Qantidade/Caixa/Sacola</label>
-                    <input class="inputtext" type="text" name="quant2" id="quant2">
-                    <label class="label" for="objeto3">objeto 3</label>
-                    <input class="inputtext" type="text" name="objeto3" id="objeto3">
-                    <label class="label" for="quant3">Qantidade/Caixa/Sacola</label>
-                    <input class="inputtext" type="text" name="quant3" id="quant3">
-                    <label class="label" for="objeto4">objeto 4</label>
-                    <input class="inputtext" type="text" name="objeto4" id="objeto4">
-                    <label class="label" for="quant4">Qantidade/Caixa/Sacola</label>
-                    <input class="inputtext" type="text" name="quant4" id="quant4">
-                    <label class="label" for="objeto5">objeto 5</label>
-                    <input class="inputtext" type="text" name="objeto5" id="objeto5">
-                    <label class="label" for="quant5">Qantidade/Caixa/Sacola</label>
-                    <input class="inputtext" type="text" name="quant5" id="quant5">
-                    <label class="label" for="objeto6">objeto 6</label>
-                    <input class="inputtext" type="text" name="objeto6" id="objeto6">
-                    <label class="label" for="quant6">Qantidade/Caixa/Sacola</label>
-                    <input class="inputtext" type="text" name="quant6" id="quant6">
-                    <label class="label" for="objeto7">objeto 7</label>
-                    <input class="inputtext" type="text" name="objeto7" id="objeto7">
-                    <label class="label" for="quant7">Qantidade/Caixa/Sacola</label>
-                    <input class="inputtext" type="text" name="quant7" id="quant7">
+                <div class="div-objetos-quant">
+                    <div class="div-objeto">
+                        <label class="label" for="objeto1">objeto 1</label>
+                        <input class="inputtext objeto" type="text" name="objeto1" id="objeto1">
+                    </div>
+                    <div class="div-quant">
+                        <label class="label" for="quant1">Qantidade/Caixa/Sacola</label>
+                        <input class="inputtext quant" type="text" name="quant1" id="quant1">
+                    </div>
                 </div>
-                <div class="div-objetos1">
-                    <label class="label" for="objeto8">objeto 8</label>
-                    <input class="inputtext" type="text" name="objeto8" id="objeto8">
-                    <label class="label" for="quant8">Qantidade/Caixa/Sacola</label>
-                    <input class="inputtext" type="text" name="quant8" id="quant8">
-                    <label class="label" for="objeto9">objeto 9</label>
-                    <input class="inputtext" type="text" name="objeto9" id="objeto9">
-                    <label class="label" for="quant9">Qantidade/Caixa/Sacola</label>
-                    <input class="inputtext" type="text" name="quant9" id="quant9">
-                    <label class="label" for="objeto10">objeto 10</label>
-                    <input class="inputtext" type="text" name="objeto10" id="objeto10">
-                    <label class="label" for="quant10">Qantidade/Caixa/Sacola</label>
-                    <input class="inputtext" type="text" name="quant10" id="quant10">
-                    <label class="label" for="objeto11">objeto 11</label>
-                    <input class="inputtext" type="text" name="objeto11" id="objeto11">
-                    <label class="label" for="quant11">Qantidade/Caixa/Sacola</label>
-                    <input class="inputtext" type="text" name="quant11" id="quant11">
-                    <label class="label" for="objeto12">objeto 12</label>
-                    <input class="inputtext" type="text" name="objeto12" id="objeto12">
-                    <label class="label" for="quant12">Qantidade/Caixa/Sacola</label>
-                    <input class="inputtext" type="text" name="quant12" id="quant12">
-                    <label class="label" for="objeto13">objeto 13</label>
-                    <input class="inputtext" type="text" name="objeto13" id="objeto13">
-                    <label class="label" for="quant13">Qantidade/Caixa/Sacola</label>
-                    <input class="inputtext" type="text" name="quant13" id="quant13">
-                    <label class="label" for="objeto14">objeto 14</label>
-                    <input class="inputtext" type="text" name="objeto14" id="objeto14">
-                    <label class="label" for="quant14">Qantidade/Caixa/Sacola</label>
-                    <input class="inputtext" type="text" name="quant14" id="quant14">
+                <div class="div-objetos-quant">
+                    <div class="div-objeto">
+                        <label class="label" for="objeto2">objeto 2</label>
+                        <input class="inputtext objeto" type="text" name="objeto2" id="objeto2">
+                    </div>
+                    <div class="div-quant">
+                        <label class="label" for="quant2">Qantidade/Caixa/Sacola</label>
+                        <input class="inputtext quant" type="text" name="quant2" id="quant2">
+                    </div>
+                </div>
+                <div class="div-objetos-quant">
+                    <div class="div-objeto">
+                        <label class="label" for="objeto3">objeto 3</label>
+                        <input class="inputtext objeto" type="text" name="objeto3" id="objeto3">
+                    </div>
+                    <div class="div-quant">
+                        <label class="label" for="quant3">Qantidade/Caixa/Sacola</label>
+                        <input class="inputtext quant" type="text" name="quant3" id="quant3">
+                    </div>
+                </div>
+                <div class="div-objetos-quant">
+                    <div class="div-objeto">
+                        <label class="label" for="objeto4">objeto 4</label>
+                        <input class="inputtext objeto" type="text" name="objeto4" id="objeto4">
+                    </div>
+                    <div class="div-quant">
+                        <label class="label" for="quant4">Qantidade/Caixa/Sacola</label>
+                        <input class="inputtext quant" type="text" name="quant4" id="quant4">
+                    </div>
+                </div>
+                <div class="div-objetos-quant">
+                    <div class="div-objeto">
+                        <label class="label" for="objeto5">objeto 5</label>
+                        <input class="inputtext objeto" type="text" name="objeto5" id="objeto5">
+                    </div>
+                    <div class="div-quant">
+                        <label class="label" for="quant5">Qantidade/Caixa/Sacola</label>
+                        <input class="inputtext quant" type="text" name="quant5" id="quant5">
+                    </div>
+                </div>
+                <div class="div-objetos-quant">
+                    <div class="div-objeto">
+                        <label class="label" for="objeto6">objeto 6</label>
+                        <input class="inputtext objeto" type="text" name="objeto6" id="objeto6">
+                    </div>
+                    <div class="div-quant">
+                        <label class="label" for="quant6">Qantidade/Caixa/Sacola</label>
+                        <input class="inputtext quant" type="text" name="quant6" id="quant6">
+                    </div>
+                </div>
+                <div class="div-objetos-quant">
+                    <div class="div-objeto">
+                        <label class="label" for="objeto7">objeto 7</label>
+                        <input class="inputtext objeto" type="text" name="objeto7" id="objeto7">
+                    </div>
+                    <div class="div-quant">
+                        <label class="label" for="quant7">Qantidade/Caixa/Sacola</label>
+                        <input class="inputtext quant" type="text" name="quant7" id="quant7">
+                    </div>
+                </div>
+                <div class="div-objetos-quant">
+                    <div class="div-objeto">
+                        <label class="label" for="objeto8">objeto 8</label>
+                        <input class="inputtext objeto" type="text" name="objeto8" id="objeto8">
+                    </div>
+                    <div class="div-quant">
+                        <label class="label" for="quant8">Qantidade/Caixa/Sacola</label>
+                        <input class="inputtext quant" type="text" name="quant8" id="quant8">
+                    </div>
+                </div>
+                <div class="div-objetos-quant">
+                    <div class="div-objeto">
+                        <label class="label" for="objeto9">objeto 9</label>
+                        <input class="inputtext objeto" type="text" name="objeto9" id="objeto9">
+                    </div>
+                    <div class="div-quant">
+                        <label class="label" for="quant9">Qantidade/Caixa/Sacola</label>
+                        <input class="inputtext quant" type="text" name="quant9" id="quant9">
+                    </div>
+                </div>
+                <div class="div-objetos-quant">
+                    <div class="div-objeto">
+                        <label class="label" for="objeto10">objeto 10</label>
+                        <input class="inputtext objeto" type="text" name="objeto10" id="objeto10">
+                    </div>
+                    <div class="div-quant">
+                        <label class="label" for="quant10">Qantidade/Caixa/Sacola</label>
+                        <input class="inputtext quant" type="text" name="quant10" id="quant10">
+                    </div>
+                </div>
+                <div class="div-objetos-quant">
+                    <div class="div-objeto">
+                        <label class="label" for="objeto11">objeto 11</label>
+                        <input class="inputtext objeto" type="text" name="objeto11" id="objeto11">
+                    </div>
+                    <div class="div-quant">
+                        <label class="label" for="quant11">Qantidade/Caixa/Sacola</label>
+                        <input class="inputtext quant" type="text" name="quant11" id="quant11">
+                    </div>
+                </div>
+                <div class="div-objetos-quant">
+                    <div class="div-objeto">
+                        <label class="label" for="objeto12">objeto 12</label>
+                        <input class="inputtext objeto" type="text" name="objeto12" id="objeto12">
+                    </div>
+                    <div class="div-quant">
+                        <label class="label" for="quant12">Qantidade/Caixa/Sacola</label>
+                        <input class="inputtext quant" type="text" name="quant12" id="quant12">
+                    </div>
+                </div>
+                <div class="div-objetos-quant">
+                    <div class="div-objeto">
+                        <label class="label" for="objeto13">objeto 13</label>
+                        <input class="inputtext objeto" type="text" name="objeto13" id="objeto13">
+                    </div>
+                    <div class="div-quant">
+                        <label class="label" for="quant13">Qantidade/Caixa/Sacola</label>
+                        <input class="inputtext quant" type="text" name="quant13" id="quant13">
+                    </div>
+                </div>
+                <div class="div-objetos-quant">
+                    <div class="div-objeto">
+                        <label class="label" for="objeto14">objeto 14</label>
+                        <input class="inputtext objeto" type="text" name="objeto14" id="objeto14">
+                    </div>
+                    <div class="div-quant">
+                        <label class="label" for="quant14">Qantidade/Caixa/Sacola</label>
+                        <input class="inputtext quant" type="text" name="quant14" id="quant14">
+                    </div>
                 </div>
             </div>
             <div class="divinput">
