@@ -12,13 +12,13 @@
 <body class="body">
     <main class="container">
         <section class="relatory-0">
-            <h1 class="h1">Relatório de Coleta</h1>
+            <h1 class="h1">Relatório de Coletas</h1>
             <div class="div-relatory-0">
                 <section class="section-relatory-0">
-                    <h2 class="h2">Última Semana</h2>
+                    <h2 class="h2">Última doações coletadas</h2>
                 </section>
                 <section class="section-relatory-1">
-                    <h2 class="h2">Último Mês</h2>
+                    <h2 class="h2">Não Coletadas</h2>
                 </section>
             </div>
         </section>

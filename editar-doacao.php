@@ -13,7 +13,7 @@
     <main class="main">
         <div class="div-form-left">
             <form class="form form-numero-ficha" method="POST" action="">
-                <label class="label" for="codigoficha">Código da Doação/Nome/Telefone/Cód Doador</label>
+                <label class="label" for="codigoficha">Código da Doação</label>
                 <input class="inputtext" type="search" name="codigoficha" id="codigoficha">
                 <div class="divinput divbtnleft">
                     <input class="btninput" type="submit" value="Pesquisar">
