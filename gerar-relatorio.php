@@ -22,10 +22,10 @@
         </div>
         <div class="div-relatory div-relatory-1">
             <section class="section-relatory section-relatory-2">
-                <h2 class="h2">Lista de Fichas Agendadas para Coleta hoje <strong class="dia_na_semana" id="dia_na_semana"></strong> dia <strong class="data_hoje" id="data_hoje"></strong></h2>
+                <h2 class="h2">Lista de Fichas Agendadas para Coleta Hoje <strong class="dia_na_semana" id="dia_na_semana"></strong> dia <strong class="data_hoje" id="data_hoje"></strong></h2>
             </section>
             <section class="section-relatory section-relatory-3">
-                <h2 class="h2">Lista de Fichas Coletadas/não Coletadas dia anterior <strong class="dia_da_semana" id="dia_da_semana"> </strong> dia <strong class="data_dia_down" id="data_dia_down"></strong></h2>
+                <h2 class="h2">Lista de Fichas Agendadas dia Anterior <strong class="dia_da_semana" id="dia_da_semana"> </strong> dia <strong class="data_dia_down" id="data_dia_down"></strong></h2>
             </section>
         </div>
         <div class="div-relatory div-relatory-2">
