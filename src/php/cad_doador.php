@@ -6,7 +6,7 @@ if (isset($dados['cadastrar_doacao']) || isset($dados['cadastrar_doador'])) {
 
     if (!empty($dados['contato1']) & !empty($dados['cep'])) {
 
-        $query_ceps = "SELECT cep FROM endereco WHERE cep LIKE :cep";
+        $query_ceps = "SELECT zipcode FROM addresszip WHERE zipcode LIKE :cep";
         $res_ceps = $conn->prepare($query_ceps);
 
         $res_ceps->bindParam(':cep', $dados['cep']);
@@ -20,7 +20,7 @@ if (isset($dados['cadastrar_doacao']) || isset($dados['cadastrar_doador'])) {
 
         if (isset($_SESSION['rescep']) != isset($dados['cep'])) {
 
-            $query_endereco = "INSERT INTO endereco (cep, rua, bairro, cidade) VALUES (:cep, :rua, :bairro, :cidade)";
+            $query_endereco = "INSERT INTO addresszip (zipcode, street, district, city) VALUES (:cep, :rua, :bairro, :cidade)";
             $cad_endereco = $conn->prepare($query_endereco);
 
             $cad_endereco->bindParam(':cep', $dados['cep']);
@@ -31,7 +31,7 @@ if (isset($dados['cadastrar_doacao']) || isset($dados['cadastrar_doador'])) {
             $cad_endereco->execute();
         }
 
-        $query_contatos = "SELECT contato1 FROM telefone WHERE contato1 LIKE :contato1";
+        $query_contatos = "SELECT contact1 FROM telephone WHERE contact1 LIKE :contato1";
         $res_contatos = $conn->prepare($query_contatos);
 
         $res_contatos->bindParam(':contato1', $dados['contato1']);
@@ -45,7 +45,7 @@ if (isset($dados['cadastrar_doacao']) || isset($dados['cadastrar_doador'])) {
 
         if (isset($_SESSION['rescontato1']) != isset($dados['contato1'])) {
 
-            $query_telefone = "INSERT INTO telefone (contato1) VALUES (:contato1)";
+            $query_telefone = "INSERT INTO telephone (contact1) VALUES (:contato1)";
             $cad_telefone = $conn->prepare($query_telefone);
 
             $cad_telefone->bindParam(':contato1', $dados['contato1']);
@@ -53,7 +53,7 @@ if (isset($dados['cadastrar_doacao']) || isset($dados['cadastrar_doador'])) {
             $cad_telefone->execute();
         }
 
-        $query_doador = "INSERT INTO doador (nome, contato1, contato2, contato3, cep, datacadastro) VALUES (:nome, :contato1, :contato2, :contato3, :cep, STR_TO_DATE('$DATA_HOJE', '%d/%m/%Y'))";
+        $query_doador = "INSERT INTO donor (donorname, contact1, contact2, contact3, zipcode, cadastredate) VALUES (:nome, :contato1, :contato2, :contato3, :cep, STR_TO_DATE('$DATA_HOJE', '%d/%m/%Y'))";
         $cad_doador = $conn->prepare($query_doador);
 
         $cad_doador->bindParam(':nome', $dados['nome']);
@@ -69,7 +69,7 @@ if (isset($dados['cadastrar_doacao']) || isset($dados['cadastrar_doador'])) {
             $_SESSION['codigodoador'] = $conn->lastInsertId();
         }
 
-        $query_residencia = "INSERT INTO residencia (cep, nunresidencia, predio, bloco, salaap, pontoref) VALUES (:cep, :nunresidencia, :predio, :bloco, :salaap, :pontoref)";
+        $query_residencia = "INSERT INTO residence (zipcode, nunresidence, building, buildingblock, hallflats, pointref) VALUES (:cep, :nunresidencia, :predio, :bloco, :salaap, :pontoref)";
         $cad_residencia = $conn->prepare($query_residencia);
 
         $cad_residencia->bindParam(':cep', $dados['cep']);

@@ -6,7 +6,7 @@ $DATA_HOJE = date("d/m/Y");
 $host = "localhost";
 $usuario = "root";
 $senha = "";
-$banco = "doador_doacao_db";
+$banco = "donor_donation_db";
 
 try {
     $conn = new PDO("mysql:host=$host;dbname=$banco", $usuario, $senha,);
